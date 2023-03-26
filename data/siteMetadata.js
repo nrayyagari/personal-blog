@@ -1,8 +1,8 @@
 const siteMetadata = {
-  title: 'Palindrome Blog',
+  title: "Palindrome's Blog",
   author: 'Nitin Ayyagari',
-  headerTitle: 'Palindrome Blog',
-  description: 'A blog about tech, life and everything in between',
+  headerTitle: "Palindrome's Blog",
+  description: 'Tech, life and everything in between',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
