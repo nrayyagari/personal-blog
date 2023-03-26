@@ -1,16 +1,19 @@
 ---
-name: Tails Azimuth
-avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
-twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+name: Nitin Ayyagari    
+avatar: /static/images/photo.jpeg
+occupation: Cloud Engineer
+company: Independent Consultant
+email: nitinayyagari@outlook.com    
+linkedin: https://www.linkedin.com/in/nitinayyagari/
+github: https://github.com/nrayyagari
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+Hello! My name is Nitin Reddy Ayyagari. 
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
+I'm currently working as Cloud Engineer, primarily dealing with AWS, Kubernetes and CI/CD pipelines
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I graduated from BTH, Sweden in Telecommunications. In addition, I have also background in Liberal arts with specialization in Political Science and International Relations. 
+
+I'm an avid follower of Tennis, Football and sometimes Cricket & F1. 
+
+In free time, I look to improve my Jumproping skills(esp Doublejump) and love to talk with my friends. 
