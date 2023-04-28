@@ -1,7 +1,7 @@
 ---
 name: Nitin Ayyagari    
 avatar: /static/images/photo.jpeg
-occupation: Cloud Engineer
+occupation: Senior Cloud Engineer
 company: QloudX
 email: nitinayyagari@outlook.com    
 linkedin: https://www.linkedin.com/in/nitinayyagari/
