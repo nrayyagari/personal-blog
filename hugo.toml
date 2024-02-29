@@ -31,8 +31,8 @@ pygmentscodefencesguesssyntax = true
     math = true
 
     ShowBackToTopButton = true
-    showPostsOnHomePage = "popular"
-    footer = "The Marauders"
+    #showPostsOnHomePage = "popular"
+    footer = "Nitin Ayyagari"
     
     socialIcons = [
       {name = "linkedin", url = "https://in.linkedin.com/in/nitinayyagari"},
