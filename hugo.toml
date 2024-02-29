@@ -65,7 +65,7 @@ publishDir = "public"
 [[menu.main]]
     url = "/pdf/linux.pdf"
     name = "Resume"
-    weight = 5
+    weight = 6
 
 [markup]
   [markup.tableOfContents]
