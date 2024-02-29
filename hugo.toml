@@ -1,40 +1,67 @@
-baseURL = 'https://nitinayyagari.com'
-languageCode = 'en-us'
-title = 'Nitin Ayyagari'
+baseURL = "https://nitinayyagari.com/"
+languageCode = "en-us"
+title = "Nitin Ayyagari"
 theme = "gokarna"
+# disqusShortname = "username" # delete this to disable disqus comments
+publishDir = "../"
 
-# Automatically generate robots.txt
-enableRobotsTXT = true
+pygmentsstyle = "b2"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 
-[menu]
-  [[menu.main]]
-    # Unique identifier for a menu item
-    identifier = "posts"
+[params]
+    author = "Nitin Ayyagari"
+    description = "Curios Engineer · Explorer · Hacker · Open-Source"
+    info = "Curious Engineer· Explorer · Hacker · Open-Source"
+    githubUsername = "nrayyagari"
+    keywords = "blog,developer,personal"
+    #avatarurl = "images/avatar.jpg"
 
-    url = "/posts/"
-    
-    # You can add extra information before the name (HTML format is supported), such as icons
-    pre = ""
+    #favicon_32 = "/img/favicon-32x32.png"
+    #favicon_16 = "/img/favicon-16x16.png"
+    colorscheme = "light"
 
-    # You can add extra information after the name (HTML format is supported), such as icons
-    post = ""
+#    footercontent = "Enter a text here."
 
-    # Display name
-    name = "Posts"
+    hidecredits = true
+    hidecopyright = false
 
-    # Weights are used to determine the ordering
+    rtl = false
+
+    math = true
+
+[[menu.main]]
+    url = "/"
+    name = "Home"
     weight = 1
 
-  [[menu.main]]
-    identifier = "tags"
-    name = "Tags"
-    url = "/tags/"
+[[menu.main]]
+    url = "/post/"
+    name = "Posts"
     weight = 2
-    
-  [[menu.main]]
-    identifier = "github"
-    url = "https://github.com"
+
+[[menu.main]]
+    url = "/project/"
+    name = "Projects"
     weight = 3
-    
-    # We use feather-icons: https://feathericons.com/
-    pre = "<span data-feather='github'></span>"
+
+[[menu.main]]
+    url = "/pdf/LinuxCommandLineCheatSheet.pdf"
+    name = "Resume"
+    weight = 4
+
+#[[params.social]]
+#    name = "Twitter"
+#    icon = "fab fa-twitter fa-2x"
+#    weight = 1
+#    url = "https://twitter.com/yashm95"
+[[params.social]]
+    name = "Github"
+    icon = "fab fa-github fa-2x"
+    weight = 2
+    url = "https://github.com/yashmehrotra"
+[[params.social]]
+    name = "Linkedin"
+    icon = "fab fa-linkedin fa-2x"
+    weight = 3
+    url = "https://in.linkedin.com/in/nitinayyagari"
