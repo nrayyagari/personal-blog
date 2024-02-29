@@ -11,8 +11,8 @@ pygmentscodefencesguesssyntax = true
 
 [params]
     author = "Nitin Ayyagari"
-    description = "Curios Engineer · Writer · Sports Buff "
-    info = "Curious Engineer· Writer · Sports Buff"
+    description = "A Curios Engineer · Writer · Sports Buff "
+    info = "A Curious Engineer· Writer · Sports Buff"
     githubUsername = "nrayyagari"
     keywords = "blog,developer,personal"
     avatarurl = "images/avatar.jpeg"
@@ -23,7 +23,7 @@ pygmentscodefencesguesssyntax = true
     colorscheme = "light"
 
 
-    hidecredits = true
+    hidecredits = false
     hidecopyright = false
 
     rtl = true
@@ -31,7 +31,7 @@ pygmentscodefencesguesssyntax = true
     math = true
 
     ShowBackToTopButton = true
-    #showPostsOnHomePage = "popular"
+    #showPostsOnHomePage = "recent"
     footer = "Nitin Ayyagari"
     
     socialIcons = [
