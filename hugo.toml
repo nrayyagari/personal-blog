@@ -56,6 +56,12 @@ pygmentscodefencesguesssyntax = true
     endLevel = 3
     ordered = false
 
+[params]
+    socialIcons = [
+      {name = "linkedin", url = "https://in.linkedin.com/in/nitinayyagari"},
+      {name = "stackoverflow", url = "https://example.com"},
+    ]
+
 #[[params.social]]
 #    name = "Twitter"
 #    icon = "fab fa-twitter fa-2x"
