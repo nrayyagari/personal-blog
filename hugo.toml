@@ -29,6 +29,11 @@ pygmentscodefencesguesssyntax = true
     rtl = false
 
     math = true
+    
+    socialIcons = [
+      {name = "linkedin", url = "https://in.linkedin.com/in/nitinayyagari"},
+      {name = "stackoverflow", url = "https://example.com"},
+    ]
 
 [[menu.main]]
     url = "/"
@@ -56,11 +61,6 @@ pygmentscodefencesguesssyntax = true
     endLevel = 3
     ordered = false
 
-[params]
-    socialIcons = [
-      {name = "linkedin", url = "https://in.linkedin.com/in/nitinayyagari"},
-      {name = "stackoverflow", url = "https://example.com"},
-    ]
 
 #[[params.social]]
 #    name = "Twitter"
