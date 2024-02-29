@@ -40,7 +40,7 @@ pygmentscodefencesguesssyntax = true
     ]
 
 [[menu.main]]
-    url = "/about"
+    url = "/about/"
     name = "About"
     weight = 1
 
