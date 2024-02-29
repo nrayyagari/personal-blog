@@ -2,6 +2,8 @@
 title: Building minimal docker images using multi-stage builds
 date: 2018-10-11
 type: post
+tags: ["kubernetes", "docker"]
+showTableOfContents: true
 ---
 
 With the advancements in the world of containers, it is now easier and feasible for you to deploy containerized applications.
