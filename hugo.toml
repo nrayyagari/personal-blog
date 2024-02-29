@@ -11,8 +11,8 @@ pygmentscodefencesguesssyntax = true
 
 [params]
     author = "Nitin Ayyagari"
-    description = "Curios Engineer · Explorer · Hacker · Open-Source"
-    info = "Curious Engineer· Explorer · Hacker · Open-Source"
+    description = "Curios Engineer · Writer · Sports Buff "
+    info = "Curious Engineer· Writer · Sports Buff"
     githubUsername = "nrayyagari"
     keywords = "blog,developer,personal"
     avatarurl = "images/avatar.jpeg"
