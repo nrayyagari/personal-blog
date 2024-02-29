@@ -1,7 +1,6 @@
 ---
 title: "My Projects"
-date: 2015-01-27
-type: "page"
+type: page
 ---
 
 Hello! I'm [Your Name], a passionate [Your Profession/Role] with a deep love for [Your Passion - e.g., technology, art, education]. Born and raised in [Your Birthplace or Hometown], I've always been fascinated by [Something You've Been Interested in Since Childhood], which eventually guided me towards my current path in [Your Field/Industry].
