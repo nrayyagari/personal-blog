@@ -1,6 +1,7 @@
 ---
 title: Sample
 type: page
+tags: ["kubernetes", "wealth"]
 ---
 
 ### History
