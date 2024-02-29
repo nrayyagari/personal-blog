@@ -24,17 +24,17 @@
     </item>
     <item>
       <title>Bruteforcing Cyberoam</title>
-      <link>http://localhost:1313/about/index-about/</link>
+      <link>http://localhost:1313/index-about/</link>
       <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/about/index-about/</guid>
+      <guid>http://localhost:1313/index-about/</guid>
       <description>This post is about how me and Avijit retrieved multiplie cyberoam username/password combinations using python. This also highlights how vulnerable the system is if you are not using a more secure password . Even the default password given to us by the College are being recycled for many years.&#xA;DISCLAIMER Before you read this, I want to clarify that we do not intend to use our findings in any unethical way.</description>
     </item>
     <item>
-      <title></title>
+      <title>sample</title>
       <link>http://localhost:1313/projects/sample/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 27 Jan 2015 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/sample/</guid>
-      <description></description>
+      <description>This post is about how me and Avijit retrieved multiplie cyberoam username/password combinations using python. This also highlights how vulnerable the system is if you are not using a more secure password . Even the default password given to us by the College are being recycled for many years.&#xA;DISCLAIMER Before you read this, I want to clarify that we do not intend to use our findings in any unethical way.</description>
     </item>
   </channel>
 </rss>
