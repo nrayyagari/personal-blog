@@ -1,6 +1,6 @@
 baseURL = 'https://nitinayyagari.com'
 languageCode = 'en-us'
-title = 'Nitin Ayyagari Personal Blog'
+title = 'Nitin Ayyagari'
 theme = "gokarna"
 
 # Automatically generate robots.txt
