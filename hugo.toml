@@ -32,7 +32,7 @@ pygmentscodefencesguesssyntax = true
     
     socialIcons = [
       {name = "linkedin", url = "https://in.linkedin.com/in/nitinayyagari"},
-      {name = "stackoverflow", url = "https://example.com"},
+      {name = "email", url = "nitinayyagari@outlook.com"},
     ]
 
 [[menu.main]]
