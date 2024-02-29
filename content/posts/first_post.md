@@ -4,7 +4,7 @@ date: 2018-10-11
 type: post
 ---
 
-With the advancements in the world of containers, it is now much easier and feasible for you to deploy containerized applications.
+With the advancements in the world of containers, it is now easier and feasible for you to deploy containerized applications.
 
 Docker is a utility to efficiently create, ship, and run containers. They enable isolation and portability of application. However, one of the challenges of building docker images is to hold down the image size. One of the most effective ways to optimise the image sizes is to use multi stage builds.
 
