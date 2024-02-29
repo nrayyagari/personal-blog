@@ -5,9 +5,6 @@ theme = "gokarna"
 # disqusShortname = "username" # delete this to disable disqus comments
 publishDir = "public"
 
-pygmentsstyle = "b2"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
 
 [params]
     author = "Nitin Ayyagari"
