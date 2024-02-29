@@ -36,7 +36,7 @@ pygmentscodefencesguesssyntax = true
     weight = 1
 
 [[menu.main]]
-    url = "/post/"
+    url = "/posts/"
     name = "Posts"
     weight = 2
 
@@ -46,7 +46,7 @@ pygmentscodefencesguesssyntax = true
     weight = 3
 
 [[menu.main]]
-    url = "/pdf/LinuxCommandLineCheatSheet.pdf"
+    url = "/pdf/linuxcommandlinecheatsheet.pdf"
     name = "Resume"
     weight = 4
 
