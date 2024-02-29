@@ -29,6 +29,10 @@ pygmentscodefencesguesssyntax = true
     rtl = false
 
     math = true
+
+    ShowBackToTopButton = true
+    showPostsOnHomePage = "popular"
+    footer = "The Marauders"
     
     socialIcons = [
       {name = "linkedin", url = "https://in.linkedin.com/in/nitinayyagari"},
