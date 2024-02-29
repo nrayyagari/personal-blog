@@ -15,13 +15,13 @@ pygmentscodefencesguesssyntax = true
     info = "Curious Engineer· Explorer · Hacker · Open-Source"
     githubUsername = "nrayyagari"
     keywords = "blog,developer,personal"
-    #avatarurl = "images/avatar.jpg"
+    avatarurl = "images/avatar.jpg"
 
     #favicon_32 = "/img/favicon-32x32.png"
     #favicon_16 = "/img/favicon-16x16.png"
     colorscheme = "light"
 
-#    footercontent = "Enter a text here."
+    footercontent = "Nitin Ayyagari"
 
     hidecredits = true
     hidecopyright = false
@@ -49,6 +49,12 @@ pygmentscodefencesguesssyntax = true
     url = "/pdf/linuxcommandlinecheatsheet.pdf"
     name = "Resume"
     weight = 4
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 3
+    ordered = false
 
 #[[params.social]]
 #    name = "Twitter"

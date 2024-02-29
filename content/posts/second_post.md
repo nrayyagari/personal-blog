@@ -2,6 +2,8 @@
 title: Keep Calm and Index Everything
 date: 2015-07-31
 type: post
+tags: ["peace", "aws"]
+showTableOfContents: true
 ---
 
 This post was originally written on lambda.grofers.com
