@@ -21,12 +21,11 @@ pygmentscodefencesguesssyntax = true
     #favicon_16 = "/img/favicon-16x16.png"
     colorscheme = "light"
 
-    footercontent = "Nitin Ayyagari"
 
-    hidecredits = false
+    hidecredits = true
     hidecopyright = false
 
-    rtl = false
+    rtl = true
 
     math = true
 
