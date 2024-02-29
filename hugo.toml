@@ -23,7 +23,7 @@ pygmentscodefencesguesssyntax = true
 
     footercontent = "Nitin Ayyagari"
 
-    hidecredits = true
+    hidecredits = false
     hidecopyright = false
 
     rtl = false
@@ -57,7 +57,7 @@ pygmentscodefencesguesssyntax = true
     weight = 4
 
 [[menu.main]]
-    url = "/pdf/linuxcommandlinecheatsheet.pdf"
+    url = "/pdf/linux.pdf"
     name = "Resume"
     weight = 5
 
@@ -66,20 +66,3 @@ pygmentscodefencesguesssyntax = true
     startLevel = 1
     endLevel = 3
     ordered = false
-
-
-#[[params.social]]
-#    name = "Twitter"
-#    icon = "fab fa-twitter fa-2x"
-#    weight = 1
-#    url = "https://twitter.com/yashm95"
-[[params.social]]
-    name = "Github"
-    icon = "fab fa-github fa-2x"
-    weight = 2
-    url = "https://github.com/yashmehrotra"
-[[params.social]]
-    name = "Linkedin"
-    icon = "fab fa-linkedin fa-2x"
-    weight = 3
-    url = "https://in.linkedin.com/in/nitinayyagari"
