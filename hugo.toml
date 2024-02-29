@@ -68,4 +68,4 @@ pygmentscodefencesguesssyntax = true
   [markup.tableOfContents]
     startLevel = 1
     endLevel = 3
-    ordered = true
+    ordered = false
