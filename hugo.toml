@@ -5,10 +5,8 @@ theme = "gokarna"
 # disqusShortname = "username" # delete this to disable disqus comments
 publishDir = "public"
 enableEmoji = true
-enableRobotsTXT = true
 pygmentsstyle = "emacs"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
+
 
 
 [params]
