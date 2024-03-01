@@ -16,7 +16,7 @@ enableRobotsTXT = true
     githubUsername = "nrayyagari"
     keywords = "blog,developer,personal"
     avatarURL = "images/avatar.webp"
-    avatarSize = "size-xl"
+    avatarSize = "size-xs"
     AvatarAltText = "avatar"
    
 
