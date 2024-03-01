@@ -5,8 +5,8 @@ theme = "gokarna"
 # disqusShortname = "username" # delete this to disable disqus comments
 publishDir = "public"
 enableEmoji = true
-pygmentsstyle = "emacs"
-
+pygmentsstyle = "vs"
+enableRobotsTXT = true
 
 
 [params]
@@ -15,12 +15,15 @@ pygmentsstyle = "emacs"
     info = "A Curious Engineer· Writer · Sports Buff"
     githubUsername = "nrayyagari"
     keywords = "blog,developer,personal"
-    avatarurl = "images/avatar.webp"
+    avatarURL = "images/avatar.webp"
+    avatarSize = "size-s"
    
 
     #favicon_32 = "/img/favicon-32x32.png"
     #favicon_16 = "/img/favicon-16x16.png"
     colorscheme = "light"
+    dateFormat = "2 January, 2006"
+    togglePreviousAndNextButtons = "true"
 
 
     hidecredits = false
