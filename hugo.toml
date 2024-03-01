@@ -4,6 +4,9 @@ title = "Nitin Ayyagari"
 theme = "gokarna"
 # disqusShortname = "username" # delete this to disable disqus comments
 publishDir = "public"
+pygmentsStyle = "vs"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
 
 
 [params]
@@ -13,7 +16,7 @@ publishDir = "public"
     githubUsername = "nrayyagari"
     keywords = "blog,developer,personal"
     avatarurl = "images/avatar.jpeg"
-    pygmentsStyle = "vs"
+   
 
     #favicon_32 = "/img/favicon-32x32.png"
     #favicon_16 = "/img/favicon-16x16.png"
