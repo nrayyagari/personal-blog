@@ -29,15 +29,15 @@
     <loc>http://localhost:1313/tags/peace/</loc>
     <lastmod>2015-07-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/index-about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2015-01-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2015-01-27T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/sample/</loc>
-    <lastmod>2015-01-27T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/general/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/general/sample/</loc>
+  </url><url>
+    <loc>http://localhost:1313/tags/wealth/</loc>
   </url>
 </urlset>

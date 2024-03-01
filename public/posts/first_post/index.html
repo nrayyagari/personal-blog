@@ -18,19 +18,19 @@
 
     
     <title>Building minimal docker images using multi-stage builds</title>
-    <meta name="description" content="Curios Engineer · Writer · Sports Buff ">
+    <meta name="description" content="A Curios Engineer · Writer · Sports Buff ">
     <meta name="keywords" content='kubernetes, docker'>
 
     <meta property="og:url" content="http://localhost:1313/posts/first_post/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Building minimal docker images using multi-stage builds">
-    <meta property="og:description" content="Curios Engineer · Writer · Sports Buff ">
+    <meta property="og:description" content="A Curios Engineer · Writer · Sports Buff ">
     <meta property="og:image" content="http://localhost:1313/images/avatar.jpeg">
     <meta property="og:image:secure_url" content="http://localhost:1313/images/avatar.jpeg">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Building minimal docker images using multi-stage builds">
-    <meta name="twitter:description" content="Curios Engineer · Writer · Sports Buff ">
+    <meta name="twitter:description" content="A Curios Engineer · Writer · Sports Buff ">
     <meta property="twitter:domain" content="http://localhost:1313/posts/first_post/">
     <meta property="twitter:url" content="http://localhost:1313/posts/first_post/">
     <meta name="twitter:image" content="http://localhost:1313/images/avatar.jpeg">
@@ -50,6 +50,9 @@
     
     <script src="/js/bundle.min.224c8e70fed292d18d7d9ae1b36797c99144e0be1117e2ea2c428379c8496551.js" integrity="sha256-IkyOcP7SktGNfZrhs2eXyZFE4L4RF&#43;LqLEKDechJZVE="></script>
 
+    
+    
+        <script defer src="https://analytics.eu.umami.is/script.js" data-website-id="92a77bfe-037b-46a0-bddf-5322f30823eb"></script>
     
     
 </head>
@@ -79,11 +82,11 @@
             </div>
             
             <div class="nav-link">
-                <a href="http://localhost:1313/posts/"> Posts </a>
+                <a href="http://localhost:1313/posts/"> Tech </a>
             </div>
             
             <div class="nav-link">
-                <a href="http://localhost:1313/project/"> Projects </a>
+                <a href="http://localhost:1313/general/"> General </a>
             </div>
             
             <div class="nav-link">
@@ -92,6 +95,14 @@
             
             <div class="nav-link">
                 <a href="http://localhost:1313/pdf/linux.pdf"> Resume </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://www.buymeacoffee.com/nitinayyagari"><span data-feather='coffee'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="http://localhost:1313/index.xml"><span data-feather='rss'></span>  </a>
             </div>
             
 
@@ -118,11 +129,11 @@
                 </li>
                 
                 <li class="nav-item">
-                    <a href="http://localhost:1313/posts/"> Posts </a>
+                    <a href="http://localhost:1313/posts/"> Tech </a>
                 </li>
                 
                 <li class="nav-item">
-                    <a href="http://localhost:1313/project/"> Projects </a>
+                    <a href="http://localhost:1313/general/"> General </a>
                 </li>
                 
                 <li class="nav-item">
@@ -131,6 +142,14 @@
                 
                 <li class="nav-item">
                     <a href="http://localhost:1313/pdf/linux.pdf"> Resume </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://www.buymeacoffee.com/nitinayyagari"><span data-feather='coffee'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="http://localhost:1313/index.xml"><span data-feather='rss'></span>  </a>
                 </li>
                 
                 <li class="nav-item dark-theme-toggle">
@@ -164,7 +183,7 @@
 
     <div class="post-content">
         <p>
-            <p>With the advancements in the world of containers, it is now easier and feasible for you to deploy containerized applications.</p>
+            <p>With the advancements in world of containers, it is now easier and &amp; feasible for you to deploy containerized applications.</p>
 <p>Docker is a utility to efficiently create, ship, and run containers. They enable isolation and portability of application. However, one of the challenges of building docker images is to hold down the image size. One of the most effective ways to optimise the image sizes is to use multi stage builds.</p>
 <p>It is in everybody&rsquo;s best interest to keep the size of docker images small as:</p>
 <ol>
@@ -182,83 +201,83 @@
 <p>Now, let&rsquo;s come to the practical part. How to write Dockerfiles that build minimal container images.</p>
 <h3 id="golang">Golang</h3>
 <p>So you have a basic web server in Golang written using gin framework.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-gdscript3" data-lang="gdscript3"><span style="display:flex;"><span>// main.go
-</span></span><span style="display:flex;"><span>package main
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>import <span style="color:#0ff;font-weight:bold">&#34;github.com/gin-gonic/gin&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#fff;font-weight:bold">func</span> main() {
-</span></span><span style="display:flex;"><span>	r := gin.Default()
-</span></span><span style="display:flex;"><span>	r.GET(<span style="color:#0ff;font-weight:bold">&#34;/ping&#34;</span>, <span style="color:#fff;font-weight:bold">func</span>(c *gin.Context) {
-</span></span><span style="display:flex;"><span>		c.JSON(<span style="color:#ff0;font-weight:bold">200</span>, gin.H{
-</span></span><span style="display:flex;"><span>			<span style="color:#0ff;font-weight:bold">&#34;message&#34;</span>: <span style="color:#0ff;font-weight:bold">&#34;pong&#34;</span>,
-</span></span><span style="display:flex;"><span>		})
-</span></span><span style="display:flex;"><span>	})
-</span></span><span style="display:flex;"><span>	r.Run() // listen and serve on <span style="color:#ff0;font-weight:bold">0.0</span>.<span style="color:#ff0;font-weight:bold">0.0</span>:<span style="color:#ff0;font-weight:bold">8080</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>Lets write the dockerfile for this</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>FROM golang:latest
-</span></span><span style="display:flex;"><span>COPY . /go/src/github.com/org/helloworld
-</span></span><span style="display:flex;"><span>WORKDIR /go/src/github.com/org/helloworld
-</span></span><span style="display:flex;"><span>RUN go get -u github.com/gin-gonic/gin
-</span></span><span style="display:flex;"><span>ENV CGO_ENABLED 0
-</span></span><span style="display:flex;"><span>RUN go build -o HelloWorld main.go
-</span></span><span style="display:flex;"><span>EXPOSE 8080
-</span></span><span style="display:flex;"><span>ENTRYPOINT [&#34;./HelloWorld&#34;]
-</span></span></code></pre></div><p>After building it, the size of the images comes up to 829 MB. You must be wondering why it is so much, after all it is a feature of golang to have static binaries. Well, the reason is this image has a lot of bloatware that is not required while running the golang application. Since it is a compiled binary, even the go package isn&rsquo;t required.</p>
+<pre tabindex="0"><code>// main.go
+package main
+
+import &#34;github.com/gin-gonic/gin&#34;
+
+func main() {
+	r := gin.Default()
+	r.GET(&#34;/ping&#34;, func(c *gin.Context) {
+		c.JSON(200, gin.H{
+			&#34;message&#34;: &#34;pong&#34;,
+		})
+	})
+	r.Run() // listen and serve on 0.0.0.0:8080
+}
+</code></pre><p>Lets write the dockerfile for this</p>
+<pre tabindex="0"><code>FROM golang:latest
+COPY . /go/src/github.com/org/helloworld
+WORKDIR /go/src/github.com/org/helloworld
+RUN go get -u github.com/gin-gonic/gin
+ENV CGO_ENABLED 0
+RUN go build -o HelloWorld main.go
+EXPOSE 8080
+ENTRYPOINT [&#34;./HelloWorld&#34;]
+</code></pre><p>After building it, the size of the images comes up to 829 MB. You must be wondering why it is so much, after all it is a feature of golang to have static binaries. Well, the reason is this image has a lot of bloatware that is not required while running the golang application. Since it is a compiled binary, even the go package isn&rsquo;t required.</p>
 <p>Now, using Mult-stage builds, we&rsquo;ll build a minimal container that only has the software required by the application at runtime.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>FROM golang:latest as base
-</span></span><span style="display:flex;"><span>COPY . /go/src/github.com/org/helloworld
-</span></span><span style="display:flex;"><span>WORKDIR /go/src/github.com/org/helloworld
-</span></span><span style="display:flex;"><span>RUN go get -u github.com/gin-gonic/gin
-</span></span><span style="display:flex;"><span>ENV CGO_ENABLED 0
-</span></span><span style="display:flex;"><span>RUN go build -o HelloWorld main.go
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>FROM scratch
-</span></span><span style="display:flex;"><span>COPY --from=base /go/src/github.com/org/helloworld/HelloWorld /usr/bin/HelloWorld
-</span></span><span style="display:flex;"><span>EXPOSE 8080
-</span></span><span style="display:flex;"><span>ENTRYPOINT [&#34;HelloWorld&#34;]
-</span></span></code></pre></div><p>The size of this image is just 15.3 MB. This is because in case of golang, we just need the compiled binary to run our application. See how the base image is used to compile the binary and then a new scratch image is created which just has the executable binary we need.</p>
+<pre tabindex="0"><code>FROM golang:latest as base
+COPY . /go/src/github.com/org/helloworld
+WORKDIR /go/src/github.com/org/helloworld
+RUN go get -u github.com/gin-gonic/gin
+ENV CGO_ENABLED 0
+RUN go build -o HelloWorld main.go
+
+FROM scratch
+COPY --from=base /go/src/github.com/org/helloworld/HelloWorld /usr/bin/HelloWorld
+EXPOSE 8080
+ENTRYPOINT [&#34;HelloWorld&#34;]
+</code></pre><p>The size of this image is just 15.3 MB. This is because in case of golang, we just need the compiled binary to run our application. See how the base image is used to compile the binary and then a new scratch image is created which just has the executable binary we need.</p>
 <p>Since golang generates a binary, it is very straightforward to create a minimal image as it does not need anything else at runtime. Now, let&rsquo;s see how we create an image for a python application which dynamically accesses it&rsquo;s libraries at run time.</p>
 <h3 id="python">Python</h3>
 <p>For python, let&rsquo;s build a simple Flask application which runs via gunicorn. So, our app.py will be</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span># app.py
-</span></span><span style="display:flex;"><span>from flask import Flask
-</span></span><span style="display:flex;"><span>app = Flask(__name__)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>@app.route(&#39;/&#39;)
-</span></span><span style="display:flex;"><span>def hello_world():
-</span></span><span style="display:flex;"><span>    return &#39;Hello, World!&#39;
-</span></span></code></pre></div><p>and the requirements.txt file will look like</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>Flask==1.0.2
-</span></span><span style="display:flex;"><span>gunicorn==19.9.0
-</span></span></code></pre></div><p>We shall start by building a normal docker image, using the following Dockerfile</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>FROM python:3.6-alpine
-</span></span><span style="display:flex;"><span>RUN apk update &amp;&amp; apk add build-base
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>COPY . /code/
-</span></span><span style="display:flex;"><span>WORKDIR /code
-</span></span><span style="display:flex;"><span>RUN pip install -r requirements.txt
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>ENTRYPOINT [&#34;gunicorn&#34;, &#34;-b&#34;, &#34;0.0.0.0:8000&#34;, &#34;app:app&#34;]
-</span></span></code></pre></div><p>Note that we are using the alpine image which itself is lightweight. The size of this image is 242 MB. This size is still small as the number of dependent libraries are less, but for a production application the size of the image can go upto ~400 MB.</p>
+<pre tabindex="0"><code># app.py
+from flask import Flask
+app = Flask(__name__)
+
+@app.route(&#39;/&#39;)
+def hello_world():
+    return &#39;Hello, World!&#39;
+</code></pre><p>and the requirements.txt file will look like</p>
+<pre tabindex="0"><code>Flask==1.0.2
+gunicorn==19.9.0
+</code></pre><p>We shall start by building a normal docker image, using the following Dockerfile</p>
+<pre tabindex="0"><code>FROM python:3.6-alpine
+RUN apk update &amp;&amp; apk add build-base
+
+COPY . /code/
+WORKDIR /code
+RUN pip install -r requirements.txt
+
+ENTRYPOINT [&#34;gunicorn&#34;, &#34;-b&#34;, &#34;0.0.0.0:8000&#34;, &#34;app:app&#34;]
+</code></pre><p>Note that we are using the alpine image which itself is lightweight. The size of this image is 242 MB. This size is still small as the number of dependent libraries are less, but for a production application the size of the image can go upto ~400 MB.</p>
 <p>Building a multi-stage build is not as direct in python compared to golang. In python, you need your dependencies to be available at runtime. Also, since gunicorn is an executable here, we need to copy that too. This is how the Dockerfile would look like:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-fallback" data-lang="fallback"><span style="display:flex;"><span>FROM python:3.6-alpine as base
-</span></span><span style="display:flex;"><span>RUN apk update &amp;&amp; apk add build-base
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>COPY . /code/
-</span></span><span style="display:flex;"><span>WORKDIR /code
-</span></span><span style="display:flex;"><span>RUN pip install -r requirements.txt
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>FROM python:3.6-alpine
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>COPY --from=base /code/ /code
-</span></span><span style="display:flex;"><span>COPY --from=base /usr/local/lib/python3.6 /usr/local/lib/python3.6
-</span></span><span style="display:flex;"><span>COPY --from=base /usr/local/bin/gunicorn /usr/local/bin/gunicorn
-</span></span><span style="display:flex;"><span>WORKDIR /code
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>ENTRYPOINT [&#34;gunicorn&#34;, &#34;-b 0.0.0.0:8000&#34;, &#34;app:app&#34;]
-</span></span></code></pre></div><p>The size of this image is 84.5 MB. You can see that we are just using the libraries and the gunicorn executable from the previous image.</p>
+<pre tabindex="0"><code>FROM python:3.6-alpine as base
+RUN apk update &amp;&amp; apk add build-base
+
+COPY . /code/
+WORKDIR /code
+RUN pip install -r requirements.txt
+
+FROM python:3.6-alpine
+
+COPY --from=base /code/ /code
+COPY --from=base /usr/local/lib/python3.6 /usr/local/lib/python3.6
+COPY --from=base /usr/local/bin/gunicorn /usr/local/bin/gunicorn
+WORKDIR /code
+
+ENTRYPOINT [&#34;gunicorn&#34;, &#34;-b 0.0.0.0:8000&#34;, &#34;app:app&#34;]
+</code></pre><p>The size of this image is 84.5 MB. You can see that we are just using the libraries and the gunicorn executable from the previous image.</p>
 <h2 id="takeaway">Takeaway</h2>
 <p>This is how multi-stage builds stack up against normal builds</p>
 <table>

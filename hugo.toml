@@ -77,7 +77,7 @@ pygmentsstyle = "emacs"
 [[menu.main]]
     identifier = "buymeacoffee"
     pre = "<span data-feather='coffee'></span>"
-    url = "https://www.buymeacoffee.com/avijitgupta"
+    url = "https://www.buymeacoffee.com/nitinayyagari"
     weight = 6
 
   [[menu.main]]
