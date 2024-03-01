@@ -36,6 +36,10 @@ publishDir = "public"
       {name = "email", url = "nitinayyagari@outlook.com"},
     ]
 
+    customHeadHTML = '''
+    <script defer src="https://analytics.eu.umami.is/script.js" data-website-id="92a77bfe-037b-46a0-bddf-5322f30823eb"></script>
+    '''
+
 #[[menu.main]]
 #    url = "/"
 #    name = "Home"
