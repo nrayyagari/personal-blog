@@ -15,7 +15,7 @@ pygmentsstyle = "emacs"
     info = "A Curious Engineer· Writer · Sports Buff"
     githubUsername = "nrayyagari"
     keywords = "blog,developer,personal"
-    avatarurl = "images/avatar.jpeg"
+    avatarurl = "images/avatar.webp"
    
 
     #favicon_32 = "/img/favicon-32x32.png"
