@@ -17,8 +17,10 @@ enableRobotsTXT = true
     keywords = "blog,developer,personal"
     avatarURL = "images/avatar.webp"
     AvatarURL = "images/avatar.webp"
-    avatarSize = "size-xs"
-    AvatarAltText = "avatar"
+    avatarImgSrc = "images/avatar.webp"
+    avatarurl = "images/avatar.webp"
+    avatarSize = "size-m"
+    AvatarAltText = "nitin"
    
 
     #favicon_32 = "/img/favicon-32x32.png"
