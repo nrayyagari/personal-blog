@@ -4,7 +4,9 @@ title = "Nitin Ayyagari"
 theme = "gokarna"
 # disqusShortname = "username" # delete this to disable disqus comments
 publishDir = "public"
-pygmentsstyle = "vs"
+enableEmoji = true
+enableRobotsTXT = true
+pygmentsstyle = "emacs"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
@@ -36,7 +38,7 @@ pygmentscodefencesguesssyntax = true
     
     socialIcons = [
       {name = "linkedin", url = "https://in.linkedin.com/in/nitinayyagari"},
-      {name = "email", url = "nitinayyagari@outlook.com"},
+      {name = "email", url = "mailto:nitinayyagari@outlook.com"}
     ]
 
     customHeadHTML = '''
@@ -84,6 +86,18 @@ pygmentscodefencesguesssyntax = true
     url = "/pdf/linux.pdf"
     name = "Resume"
     weight = 5
+
+[[menu.main]]
+    identifier = "buymeacoffee"
+    pre = "<span data-feather='coffee'></span>"
+    url = "https://www.buymeacoffee.com/avijitgupta"
+    weight = 6
+
+  [[menu.main]]
+    identifier = "rss"
+    pre = "<span data-feather='rss'></span>"
+    url = "/index.xml"
+    weight = 7
 
 [markup]
   [markup.tableOfContents]
