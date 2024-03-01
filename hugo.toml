@@ -46,8 +46,7 @@ publishDir = "public"
     data-app-id="b96b07d8-639a-4a51-9aa2-f70dd074ed31"
     data-page-id="{{ PAGE_ID }}"
     data-page-url="{{ PAGE_URL }}"
-    data-page-title="{{ PAGE_TITLE }}"
-    ></div>
+    data-page-title="{{ PAGE_TITLE }}"></div>
     <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
     '''
 
