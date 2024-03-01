@@ -16,7 +16,10 @@ enableRobotsTXT = true
     githubUsername = "nrayyagari"
     keywords = "blog,developer,personal"
     avatarURL = "images/avatar.webp"
-    avatarSize = "size-s"
+    avatarSize = "size-xl"
+
+    avatarURL = "/images/avatar.webp"
+    AvatarAltText = "avatar"
    
 
     #favicon_32 = "/img/favicon-32x32.png"
