@@ -17,8 +17,6 @@ enableRobotsTXT = true
     keywords = "blog,developer,personal"
     avatarURL = "images/avatar.webp"
     avatarSize = "size-xl"
-
-    avatarURL = "/images/avatar.webp"
     AvatarAltText = "avatar"
    
 
