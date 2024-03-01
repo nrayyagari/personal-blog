@@ -4,7 +4,7 @@ title = "Nitin Ayyagari"
 theme = "gokarna"
 # disqusShortname = "username" # delete this to disable disqus comments
 publishDir = "public"
-pygmentsStyle = "vs"
+pygmentsstyle = "vs"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
