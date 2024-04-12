@@ -1,6 +1,6 @@
 ---
 title: Fetching Metadata of Helm Chart Repository - A case with Nexus
-date: 2023-12-20
+date: 2024-02-20
 type: post
 tags: ["helm"]
 showTableOfContents: false
