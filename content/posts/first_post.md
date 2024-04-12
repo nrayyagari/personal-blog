@@ -16,7 +16,7 @@ cURL is designed with minimal behavior by default, only performing the necessary
 
 To retrieve data from an API endpoint, use cURL with a simple GET request. For example:
 
-```bash
+```
 curl https://api.example.com/data
 ```
 
@@ -26,7 +26,7 @@ This command sends a GET request to the specified URL and displays the response 
 
 When you need to send data to an API, cURL allows you to make POST requests. Here's an example:
 
-```bash
+```
 curl -X POST -H "Content-Type: application/json" -d '{"key": "value"}' https://api.example.com/data
 ```
 
@@ -46,7 +46,7 @@ The `-u` flag allows you to provide a username and password for authentication .
 
 Sometimes, you may want to save the API response to a file for further analysis. cURL makes this straightforward:
 
-```bash
+```
 curl -o output.txt https://api.example.com/data
 ```
 
@@ -56,7 +56,7 @@ The `-o` flag specifies the output file where the response will be saved .
 
 When things don't work as expected, cURL offers helpful debugging options. Use the `-v` flag for verbose output:
 
-```bash
+```
 curl -v https://api.example.com/data
 ```
 

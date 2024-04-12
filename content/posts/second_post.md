@@ -1,8 +1,8 @@
 ---
-title: Blog Post - 2
-date: 2015-07-31
+title: Fetching Metadata of Helm Chart Repository - A case with Nexus
+date: 2023-12-20
 type: post
-tags: ["peace", "aws"]
+tags: ["helm"]
 showTableOfContents: false
 ---
 
