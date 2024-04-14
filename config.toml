@@ -27,8 +27,8 @@ enableRobotsTXT = true
     togglePreviousAndNextButtons = "true"
 
 
-    #hidecredits = true
-    #hidecopyright = false
+    hidecredits = true
+    hidecopyright = true
 
     rtl = true
 
@@ -86,16 +86,16 @@ enableRobotsTXT = true
     weight = 5
 
 [[menu.main]]
-    identifier = "buymeacoffee"
-    pre = "<span data-feather='coffee'></span>"
-    url = "https://www.buymeacoffee.com/nitinayyagari"
-    weight = 6
-
-  [[menu.main]]
     identifier = "rss"
     pre = "<span data-feather='rss'></span>"
     url = "/index.xml"
-    weight = 7
+    weight = 6
+
+#[[menu.main]]
+#    identifier = "buymeacoffee"
+#    pre = "<span data-feather='coffee'></span>"
+#    url = "https://www.buymeacoffee.com/nitinayyagari"
+#    weight = 6
 
 [markup]
   [markup.tableOfContents]
