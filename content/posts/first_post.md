@@ -10,7 +10,7 @@ As a developer working with APIs, having a reliable and versatile tool for makin
 
 # cool-beans
 
-{{< youtube gh3FyLT7WVg autoplay="true" mute="true" >}}
+{{< youtube gh3FyLT7WVg >}}
 
 Press play to see the video.
 
