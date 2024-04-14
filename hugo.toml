@@ -15,12 +15,11 @@ enableRobotsTXT = true
     info = "A Curious Engineer· Writer · Sports Buff"
     githubUsername = "nrayyagari"
     keywords = "blog,developer,personal"
-    avatarURL = "/images/avatar.jpg"
-    AvatarURL = "/images/avatar.jpg"
+    avatarURL = "/images/avatar.webp"
+    AvatarURL = "/images/avatar.webp"
     #avatarImgSrc = "images/avatar.jpg"
-    avatarurl = "images/avatar.jpg"
-    #avatarSize = "size-m"
-    #AvatarAltText = "randomtext"
+    avatarSize = "size-m"
+    AvatarAltText = "Nitin Ayyagari"
    
 
     #favicon_32 = "/img/favicon-32x32.png"
@@ -38,7 +37,7 @@ enableRobotsTXT = true
     math = true
 
     ShowBackToTopButton = true
-    #showPostsOnHomePage = "recent"
+    showPostsOnHomePage = "recent"
     footer = "Nitin Ayyagari"
     
     socialIcons = [
