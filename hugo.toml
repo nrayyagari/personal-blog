@@ -11,12 +11,12 @@ enableRobotsTXT = true
 
 [params]
     author = "Nitin Ayyagari"
-    description = "A Curios Engineer · Writer · Sports Buff "
+    description = "A Curios Engineer · Writer · Sports Buff"
     info = "A Curious Engineer· Writer · Sports Buff"
     githubUsername = "nrayyagari"
     keywords = "blog,developer,personal"
     avatarURL = "images/avatar.webp"
-    AvatarURL = "images/avatar.webp"
+    AvatarURL = "static/images/avatar.webp"
     avatarImgSrc = "images/avatar.webp"
     avatarurl = "images/avatar.webp"
     avatarSize = "size-m"
@@ -30,7 +30,7 @@ enableRobotsTXT = true
     togglePreviousAndNextButtons = "true"
 
 
-    hidecredits = false
+    hidecredits = true
     hidecopyright = false
 
     rtl = true
