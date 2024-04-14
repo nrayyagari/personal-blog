@@ -27,8 +27,8 @@ enableRobotsTXT = true
     togglePreviousAndNextButtons = "true"
 
 
-    hidecredits = true
-    hidecopyright = false
+    #hidecredits = true
+    #hidecopyright = false
 
     rtl = true
 
