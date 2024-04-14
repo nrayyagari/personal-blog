@@ -8,7 +8,11 @@ showTableOfContents: false
 
 As a developer working with APIs, having a reliable and versatile tool for making HTTP requests is very essential. cURL, a powerful command-line utility, is the perfect companion for API development and testing. In this blog post, we'll explore how to leverage cURL to streamline your API workflow.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>s
+# cool-beans
+
+{{< youtube gh3FyLT7WVg autoplay="true" mute="true" >}}
+
+Press play to see the video.
 
 ## 1. Understanding cURL Basics
 
