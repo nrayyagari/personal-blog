@@ -15,10 +15,10 @@ enableRobotsTXT = true
     info = "A Curious Engineer· Writer · Sports Buff"
     githubUsername = "nrayyagari"
     keywords = "blog,developer,personal"
-    avatarURL = "images/avatar.webp"
+    avatarURL = "staticimages/avatar.webp"
     AvatarURL = "static/images/avatar.webp"
-    avatarImgSrc = "images/avatar.webp"
-    avatarurl = "images/avatar.webp"
+    avatarImgSrc = "static/images/avatar.webp"
+    avatarurl = "static/mages/avatar.webp"
     avatarSize = "size-m"
     AvatarAltText = "nitin"
    
