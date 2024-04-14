@@ -12,7 +12,7 @@ As a developer working with APIs, having a reliable and versatile tool for makin
 
 {{< youtube gh3FyLT7WVg >}}
 
-Press play to see the video.
+Press play to see the video and enjoy.
 
 ## 1. Understanding cURL Basics
 
