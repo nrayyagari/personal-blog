@@ -19,7 +19,7 @@ enableRobotsTXT = true
     AvatarURL = "static/images/avatar.webp"
     avatarImgSrc = "static/images/avatar.webp"
     avatarurl = "static/mages/avatar.webp"
-    avatarSize = "size-m"
+    avatarSize = "size-s"
     AvatarAltText = "nitin"
    
 
