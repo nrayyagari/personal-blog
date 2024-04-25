@@ -4,10 +4,19 @@ date: 2015-01-27
 type: "page"
 ---
 
-Hello! I'm [Your Name], a passionate [Your Profession/Role] with a deep love for [Your Passion - e.g., technology, art, education]. Born and raised in [Your Birthplace or Hometown], I've always been fascinated by [Something You've Been Interested in Since Childhood], which eventually guided me towards my current path in [Your Field/Industry].
+Hi there, I'm Nitin and yes I'm a Palindrome!
 
-With [Number of Years] years of experience under my belt, I've had the privilege of working on [Brief Description of Your Work or Projects], where I've honed my skills in [Your Skills or Areas of Expertise]. My journey has taught me the importance of [A Value or Lesson You've Learned], and I strive to apply this principle in every aspect of my professional life.
+I'm Cloud Engineer based out of Hyderabad, India currently. This blog is small space I created amidst the vast space of Internet
+I intend to share my Technical learnings/experiences under https://nitinayyagari.com/posts/ and thoughts on Generic topics under https://nitinayyagari.com/general/
 
-When I'm not [Activity Related to Your Profession], you can find me [Your Hobbies or Interests], exploring the great outdoors, or curled up with a good book. I believe in living a balanced life, where dedication to work is equally matched by moments of leisure and self-discovery.
+My career path is not linear. I did my Masters from BTH, Sweden in the field of Networking and Cloud Computing. There after working for a 
+startup called Flux7, I took an unusual path of trying for Civil services in India. Having found only limited success there, I switched
+back to my Tech career again. 
 
-I hold a degree in [Your Degree] from [Your University], a credential that has provided me with a solid foundation in [Field of Study]. My education, coupled with real-world experience, has equipped me with a unique perspective that I bring to my work.
+On the Tech Side, I mainly deal with Linux, AWS Services, Python, Kubernetes, CICD toolchain and *learn whatever needs to be learnt to get the job done*. 
+Testament to this: I had to learn and use ClearCase, a decade old IBM SCM to get a task done as there was no one aware of it in our company! 
+
+Other than work, I love watching sports esp. Tennis, Football and sometimes Test Cricket! I believe Sport has a lot to teach and inspire us
+
+Occasionally I also try few recipes and currently learning how to cook Country Chicken(my fav too!)
+
