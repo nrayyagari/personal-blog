@@ -1,22 +1,15 @@
 ---
 title: "About me!"
-date: 2015-01-27
+date: 2023-01-20
 type: "page"
 ---
 
-Hi there, I'm Nitin and yes I'm a Palindrome!
+Hey there! I'm Nitin, a Cloud Engineer based in India, and yes, my name is a palindrome – how cool is that? 🙂. In the vast expanse of the internet, this blog is my cozy nook where I share my technical adventures and musings on all things geeky (and sometimes not-so-geeky too!).
 
-I'm Cloud Engineer based out of Hyderabad, India currently. This blog is small space I created amidst the vast space of Internet
-I intend to share my Technical learnings/experiences under https://nitinayyagari.com/posts/ and thoughts on Generic topics under https://nitinayyagari.com/general/
+My journey began with a MS degree in Networking and Cloud Computing from BTH, Sweden. After working at a startup called Flux7, I took an unconventional detour and tried my hand at India's Civil Services Exams. While I didn't achieve the success I hoped for, the experience taught me invaluable lessons in perseverance and adaptability.
 
-My career path is not linear. I did my Masters from BTH, Sweden in the field of Networking and Cloud Computing. There after working for a 
-startup called Flux7, I took an unusual path of trying for Civil services in India. Having found only limited success there, I switched
-back to my Tech career again. 
+Eventually, I found my way back to the tech world, where I thrive on tackling challenges head-on. My go-to tools? Linux, AWS services, Python, Kubernetes, CI/CD toolchains, and Observability, to name a few. But here's the thing: *I'm always ready to learn whatever it takes to get the job done*. Case in point: I once had to learn and use ClearCase, a decade-old IBM SCM, to complete a task as there were none on how to use it!
 
-On the Tech Side, I mainly deal with Linux, AWS Services, Python, Kubernetes, CICD toolchain and *learn whatever needs to be learnt to get the job done*. 
-Testament to this: I had to learn and use ClearCase, a decade old IBM SCM to get a task done as there was no one aware of it in our company! 
+When I'm not at work, you'll find me cheering on my favorite players and teams(Tennis, Football, and Test Cricket, anyone?). I firmly believe that sport has a lot to teach us about life, and I try to apply those lessons both on and off the field. To keep my body and mind in sync, I love swinging my Jump rope aka skipping, going on drives, and trying new dishes in the kitchen. Life's all about balance, right?
 
-Other than work, I love watching sports esp. Tennis, Football and sometimes Test Cricket! I believe Sport has a lot to teach and inspire us
-
-Occasionally I also try few recipes and currently learning how to cook Country Chicken(my fav too!)
-
+So, there you have it – a little glimpse into my world. Feel free to reach out to me at [email] or connect with me on [social media links]. I'm always eager to meet new people and learn from their experiences
