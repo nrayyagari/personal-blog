@@ -62,6 +62,7 @@ pygmentsOptions = "linenos=table"
     })(window, document, "clarity", "script", "lecybhcnw7");
     </script>
     '''
+
 [markup]
   [markup.highlight]
     codeFences = true
@@ -73,11 +74,6 @@ pygmentsOptions = "linenos=table"
     noClasses = false
     style = "monokai"
     tabWidth = 4
-
-  [markup.tableOfContents]
-    startLevel = 1
-    endLevel = 3
-    ordered = false
 
 #[[menu.main]]
 #    url = "/"
