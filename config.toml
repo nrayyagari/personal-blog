@@ -7,8 +7,8 @@ publishDir = "public"
 enableEmoji = true
 enableRobotsTXT = true
 pygmentsUseClassic=true
-pygmentsStyle = "abap"
-pygmentsstyle = "abap"
+pygmentsStyle = "b12"
+pygmentsstyle = "b12"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
