@@ -7,11 +7,9 @@ publishDir = "public"
 enableEmoji = true
 enableRobotsTXT = true
 pygmentsuseclassic=true
-pygmentsStyle = "b12"
 pygmentsstyle = "b12"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
-
 
 [params]
     author = "Nitin Ayyagari"
@@ -40,9 +38,6 @@ pygmentscodefencesguesssyntax = true
     ShowBackToTopButton = true
     showPostsOnHomePage = "recent"
     footer = "Nitin Ayyagari"
-    pygmentsStyle = "monokai"
-    pygmentsCodeFences = true
-    pygmentsCodeFencesGuessSyntax = true
     
     socialIcons = [
       {name = "linkedin", url = "https://in.linkedin.com/in/nitinayyagari"},
