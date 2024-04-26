@@ -31,20 +31,6 @@ COPY . .
 
 CMD ["npm", "start"]
 
-<!-- Copy code button -->
-
-<button onclick="copyCode(this)">Copy Code</button>
-
-<script>
-function copyCode(button) {
-  const code = button.previousElementSibling.innerText;
-  navigator.clipboard.writeText(code);
-  button.innerText = 'Copied!';
-  setTimeout(() => {
-    button.innerText = 'Copy Code';
-  }, 2000);
-}
-</script>
 
 To build the image, you run the following command:
 
@@ -68,26 +54,27 @@ Here's how you can build a multi-architecture Docker image:
 
 1. Enable Docker experimental features:
 
-   ```markdown
+```
    export DOCKER_CLI_EXPERIMENTAL=enabled
-   ```
+```
 
 2. Create a new builder instance:
 
-   ```python
+```
    docker buildx create --name mybuilder
    docker buildx use mybuilder
    docker buildx inspect --bootstrap
-   ```
+```
 
+3. Build the multi-architecture image
 
-3. Build the multi-architecture image:
 ```
    docker buildx build --platform linux/amd64,linux/arm64 -t my-app:latest .
 ```
    This command builds the image for both x86-64 and ARM64 architectures and tags it as `my-app:latest` .
 
-4. Push the image to a registry:
+4. Push the image to a registry
+
 ```
    docker buildx build --platform linux/amd64,linux/arm64 -t my-app:latest --push .
 ```
