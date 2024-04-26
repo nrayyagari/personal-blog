@@ -16,7 +16,7 @@ pygmentsuseclassic=true
 
 pygmentsCodeFences = true
 pygmentsUseClasses = true
-pygmentsOptions = "linenos=table"
+#pygmentsOptions = "linenos=table"
 
 [params]
     author = "Nitin Ayyagari"
