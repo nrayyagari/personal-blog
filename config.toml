@@ -6,9 +6,10 @@ theme = "gokarna"
 publishDir = "public"
 enableEmoji = true
 enableRobotsTXT = true
+pygmentsUseClassic=true
 pygmentsStyle = "monokai"
-pygmentsCodefences = true
-pygmentsCodefencesGuessSyntax = true
+pygmentsCodeFences = true
+pygmentsCodeFencesGuessSyntax = true
 
 
 [params]
