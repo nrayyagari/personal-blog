@@ -2,8 +2,8 @@
 title: Building Docker Images for Multiple Architectures
 date: 2023-05-24
 type: post
-tags: ["docker", "multi-arch", "linux", "arm64", "amd64"]
-showTableOfContents: true
+tags: ["docker"]
+showTableOfContents: false
 ---
 
 ## Introduction
@@ -20,7 +20,6 @@ ARM-based chips, like AWS Graviton and Apple's M1, are designed to deliver high 
 
 Traditionally, building a Docker image involves creating a Dockerfile that defines the steps to build your application. Here's a simple example:
 
-```
 FROM node:14
 
 WORKDIR /app
@@ -31,7 +30,21 @@ RUN npm install
 COPY . .
 
 CMD ["npm", "start"]
-```
+
+<!-- Copy code button -->
+
+<button onclick="copyCode(this)">Copy Code</button>
+
+<script>
+function copyCode(button) {
+  const code = button.previousElementSibling.innerText;
+  navigator.clipboard.writeText(code);
+  button.innerText = 'Copied!';
+  setTimeout(() => {
+    button.innerText = 'Copy Code';
+  }, 2000);
+}
+</script>
 
 To build the image, you run the following command:
 
