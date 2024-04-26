@@ -27,7 +27,7 @@ enableRobotsTXT = true
     avatarURL = "/images/avatar.webp"
     avatarSize = "size-m"
     AvatarAltText = "Nitin Ayyagari"
-    customCSS = ["css/custom.css"]
+    #customCSS = ["css/custom.css"]
    
 
     #favicon_32 = "/img/favicon-32x32.png"
