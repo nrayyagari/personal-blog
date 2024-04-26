@@ -1,0 +1,43 @@
+/* Background color for code blocks */
+pre {
+    background-color: #1e1e1e;
+    padding: 1em;
+    border-radius: 5px;
+  }
+  
+  /* Text color for code */
+  pre code {
+    color: #d4d4d4;
+  }
+  
+  /* Keyword color */
+  .k {
+    color: #569cd6;
+  }
+  
+  /* Function color */
+  .nf {
+    color: #dcdcaa;
+  }
+  
+  /* String color */
+  .s {
+    color: #ce9178;
+  }
+  
+  /* Comment color */
+  .c {
+    color: #6a9955;
+  }
+  
+  /* Number color */
+  .mi, .mf {
+    color: #b5cea8;
+  }
+  
+  /* Line number color */
+  .ln {
+    color: #858585;
+    margin-right: 1em;
+  }
+  
