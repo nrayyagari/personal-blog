@@ -9,10 +9,14 @@ enableRobotsTXT = true
 pygmentsuseclassic=true
 
 # Syntax Highlighting Configuration
-pygmentsCodeFences = true
-pygmentsStyle = "pygments-solarized-dark"
+#pygmentsCodeFences = true
+#pygmentsStyle = "pygments-solarized-dark"
 #pygmentsOptions = "linenos=table"
-pygmentsCodeFencesGuessSyntax = true
+#pygmentsCodeFencesGuessSyntax = true
+
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+pygmentsOptions = "linenos=table"
 
 [params]
     author = "Nitin Ayyagari"
@@ -23,6 +27,7 @@ pygmentsCodeFencesGuessSyntax = true
     avatarURL = "/images/avatar.webp"
     avatarSize = "size-m"
     AvatarAltText = "Nitin Ayyagari"
+    customCSS = ["css/syntax.css"]
    
 
     #favicon_32 = "/img/favicon-32x32.png"
