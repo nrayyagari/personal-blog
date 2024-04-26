@@ -20,6 +20,7 @@ ARM-based chips, like AWS Graviton and Apple's M1, are designed to deliver high 
 
 Traditionally, building a Docker image involves creating a Dockerfile that defines the steps to build your application. Here's a simple example:
 
+```
 FROM node:14
 
 WORKDIR /app
@@ -30,7 +31,7 @@ RUN npm install
 COPY . .
 
 CMD ["npm", "start"]
-
+```
 
 To build the image, you run the following command:
 
