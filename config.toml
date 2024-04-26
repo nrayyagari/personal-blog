@@ -14,9 +14,9 @@ pygmentsStyle = "vs"
 #pygmentsOptions = "linenos=table"
 #pygmentsCodeFencesGuessSyntax = true
 
-#pygmentsCodeFences = true
-#pygmentsUseClasses = true
-#pygmentsOptions = "linenos=table"
+pygmentsCodeFences = true
+pygmentsUseClasses = false
+pygmentsStyle = "tango"
 
 [params]
     author = "Nitin Ayyagari"
@@ -28,6 +28,7 @@ pygmentsStyle = "vs"
     avatarSize = "size-m"
     AvatarAltText = "Nitin Ayyagari"
     #customCSS = ["css/custom.css"]
+    prism_syntax_highlighting = true
    
 
     #favicon_32 = "/img/favicon-32x32.png"
@@ -61,23 +62,31 @@ pygmentsStyle = "vs"
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "lecybhcnw7");
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.0/themes/prism.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     
     '''
 
 
+#[markup]
+#  [markup.highlight]
+#    codeFences = true
+#    guessSyntax = true
+#    hl_Lines = ""
+#    lineNoStart = 1
+#    lineNos = false
+#    lineNumbersInTable = true
+#    noClasses = false
+#    style = "vs"
+#    tabWidth = 1
+
+
 [markup]
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = true
-    hl_Lines = ""
-    lineNoStart = 1
-    lineNos = false
-    lineNumbersInTable = true
-    noClasses = false
-    style = "vs"
-    tabWidth = 1
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+[markup.highlight]
+style = "tango"
 
 
 
