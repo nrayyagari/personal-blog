@@ -16,7 +16,7 @@ enableRobotsTXT = true
 
 pygmentsCodeFences = true
 pygmentsUseClasses = false
-pygmentsStyle = "tango"
+pygmentsStyle = "vs"
 
 [params]
     author = "Nitin Ayyagari"
@@ -74,10 +74,10 @@ pygmentsStyle = "tango"
     guessSyntax = true
     hl_Lines = ""
     lineNoStart = 1
-    lineNos = false
+    lineNos = true
     lineNumbersInTable = true
     noClasses = false
-    style = "tango"
+    style = "vs"
     tabWidth = 1
 
 
