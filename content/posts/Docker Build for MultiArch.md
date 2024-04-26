@@ -1,6 +1,6 @@
 ---
 title: Building Docker Images for Multiple Architectures
-date: 2023-05-24
+date: 2024-03-24
 type: post
 tags: ["docker"]
 showTableOfContents: false
