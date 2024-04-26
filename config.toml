@@ -62,7 +62,7 @@ pygmentsOptions = "linenos=table"
     })(window, document, "clarity", "script", "lecybhcnw7");
     </script>
     '''
-markup]
+[markup]
   [markup.highlight]
     codeFences = true
     guessSyntax = true
