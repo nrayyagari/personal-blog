@@ -39,6 +39,9 @@ pygmentsCodeFencesGuessSyntax = true
     ShowBackToTopButton = true
     showPostsOnHomePage = "recent"
     footer = "Nitin Ayyagari"
+    pygmentsStyle = "monokai"
+    pygmentsCodeFences = true
+    pygmentsCodeFencesGuessSyntax = true
     
     socialIcons = [
       {name = "linkedin", url = "https://in.linkedin.com/in/nitinayyagari"},
