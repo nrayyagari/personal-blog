@@ -10,7 +10,7 @@ enableRobotsTXT = true
 
 # Syntax Highlighting Configuration
 #pygmentsCodeFences = true
-pygmentsStyle = "vs"
+#pygmentsStyle = "vs"
 #pygmentsOptions = "linenos=table"
 #pygmentsCodeFencesGuessSyntax = true
 
