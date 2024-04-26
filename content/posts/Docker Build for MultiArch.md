@@ -16,7 +16,7 @@ In recent years, ARM-based chips have gained significant popularity in the compu
 
 ARM-based chips, like AWS Graviton and Apple's M1, are designed to deliver high performance while consuming less power. This makes them an attractive option for cloud providers and users looking to optimize costs and reduce their carbon footprint. As a result, more and more applications are being deployed on ARM-based infrastructure.
 
-```python
+```markup
 def hello_world():
     print("Hello, World!")
 ```
@@ -25,7 +25,7 @@ def hello_world():
 
 Traditionally, building a Docker image involves creating a Dockerfile that defines the steps to build your application. Here's a simple example:
 
-```python
+```markup
 FROM node:14
 
 WORKDIR /app
