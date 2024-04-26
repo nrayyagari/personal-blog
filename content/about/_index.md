@@ -4,7 +4,7 @@ date: 2023-01-20
 type: "page"
 ---
 
-Hey there! I'm <u>Nitin</u>, a Software Engineer based in India, and yes, my name is a [***Palindrome***](https://en.wikipedia.org/wiki/Palindrome) – how cool is that? 🙂. In this little corner of the internet, I explore my love for technology and share my experiences, both geeky and not-so-geeky.
+Hey there! I'm <u>Nitin</u>, a Software Engineer based in India, and yes, my name is a [**Palindrome**](https://en.wikipedia.org/wiki/Palindrome) – how cool is that? 🙂. In this little corner of the internet, I explore my love for technology and share my experiences, both geeky and not-so-geeky.
 
 My journey began with a MS degree in Networking and Cloud Computing from [BTH, Sweden](https://www.bth.se/eng/). After working at a startup called [Flux7](https://us.nttdata.com/en/news/press-release/2019/december/ntt-data-services-to-acquire-flux7-an-aws-premier-consulting-partner), I took an unconventional detour and tried my hand at India's [Civil Services](https://www.bbc.com/news/world-asia-india-64316112). While I didn't get the result I hoped for, the experience taught me invaluable lessons in resilience and adaptability.
 
