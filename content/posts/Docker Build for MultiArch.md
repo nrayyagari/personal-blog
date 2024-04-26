@@ -42,7 +42,7 @@ CMD ["npm", "start"]
 
 To build the image, you run the following command:
 
-```
+```python
 docker build -t my-app .
 ```
 
@@ -62,13 +62,13 @@ Here's how you can build a multi-architecture Docker image:
 
 1. Enable Docker experimental features:
 
-```
+```python
    export DOCKER_CLI_EXPERIMENTAL=enabled
 ```
 
 2. Create a new builder instance:
 
-```
+```python
    docker buildx create --name mybuilder
    docker buildx use mybuilder
    docker buildx inspect --bootstrap
@@ -76,14 +76,14 @@ Here's how you can build a multi-architecture Docker image:
 
 3. Build the multi-architecture image
 
-```
+```python
    docker buildx build --platform linux/amd64,linux/arm64 -t my-app:latest .
 ```
    This command builds the image for both x86-64 and ARM64 architectures and tags it as `my-app:latest` .
 
 4. Push the image to a registry
 
-```
+```python
    docker buildx build --platform linux/amd64,linux/arm64 -t my-app:latest --push .
 ```
    By adding the `--push` flag, the built images are automatically pushed to the configured registry.
