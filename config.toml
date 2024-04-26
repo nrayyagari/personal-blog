@@ -16,7 +16,7 @@ enableRobotsTXT = true
 
 pygmentsCodeFences = true
 pygmentsUseClasses = false
-pygmentsStyle = "tango"
+pygmentsStyle = "abap"
 
 [params]
     author = "Nitin Ayyagari"
