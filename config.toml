@@ -68,25 +68,25 @@ pygmentsStyle = "tango"
     '''
 
 
-#[markup]
-#  [markup.highlight]
-#    codeFences = true
-#    guessSyntax = true
-#    hl_Lines = ""
-#    lineNoStart = 1
-#    lineNos = false
-#    lineNumbersInTable = true
-#    noClasses = false
-#    style = "vs"
-#    tabWidth = 1
-
-
 [markup]
-[markup.goldmark]
-[markup.goldmark.renderer]
-unsafe = true
-[markup.highlight]
-style = "tango"
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = false
+    style = "tango"
+    tabWidth = 1
+
+
+#[markup]
+#[markup.goldmark]
+#[markup.goldmark.renderer]
+#unsafe = true
+#[markup.highlight]
+#style = "tango"
 
 
 
