@@ -33,7 +33,7 @@ pygmentsStyle = "abap"
 
     #favicon_32 = "/img/favicon-32x32.png"
     #favicon_16 = "/img/favicon-16x16.png"
-    colorscheme = "light"
+    colorscheme = "dark"
     dateFormat = "2 January, 2006"
     togglePreviousAndNextButtons = "true"
 
@@ -86,7 +86,7 @@ pygmentsStyle = "abap"
 [markup.goldmark.renderer]
 unsafe = true
 [markup.highlight]
-style = "tango"
+style = "abap"
 
 
 
