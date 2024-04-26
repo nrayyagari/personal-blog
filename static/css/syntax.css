@@ -1,6 +1,6 @@
 /* Light mode styles */
 :root {
-    --code-background-color: #f6f8fa;
+    --code-background-color: #f0f0f0;
     --code-text-color: #24292e;
     --code-keyword-color: #d73a49;
     --code-function-color: #6f42c1;
@@ -65,4 +65,3 @@
     color: var(--code-line-number-color);
     margin-right: 1em;
   }
-  
