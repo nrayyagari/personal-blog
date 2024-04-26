@@ -9,11 +9,6 @@ enableRobotsTXT = true
 #pygmentsuseclassic=true
 
 # Syntax Highlighting Configuration
-#pygmentsCodeFences = true
-#pygmentsStyle = "vs"
-#pygmentsOptions = "linenos=table"
-#pygmentsCodeFencesGuessSyntax = true
-
 pygmentsCodeFences = true
 pygmentsUseClasses = false
 pygmentsStyle = "tango"
@@ -27,7 +22,8 @@ pygmentsStyle = "tango"
     avatarURL = "/images/avatar.webp"
     avatarSize = "size-m"
     AvatarAltText = "Nitin Ayyagari"
-    customCSS = ["css/custom.css"]
+    customCSS = ["css/prism.min.css"]
+    customJS = ["js/prism.min.js"]
     prism_syntax_highlighting = true
    
 
@@ -62,11 +58,12 @@ pygmentsStyle = "tango"
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "lecybhcnw7");
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
-    
+    <link rel="stylesheet" href="/css/prism.min.css">
+    <script src="/js/prism.min.js"></script>
     '''
 
+#<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
+#<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>    
 
 [markup]
   [markup.highlight]
@@ -79,17 +76,6 @@ pygmentsStyle = "tango"
     noClasses = false
     style = "tango"
     tabWidth = 1
-
-
-[markup]
-[markup.goldmark]
-[markup.goldmark.renderer]
-unsafe = true
-[markup.highlight]
-style = "tango"
-
-
-
 
 #[[menu.main]]
 #    url = "/"
