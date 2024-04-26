@@ -6,16 +6,16 @@ theme = "gokarna"
 publishDir = "public"
 enableEmoji = true
 enableRobotsTXT = true
-pygmentsuseclassic=true
+#pygmentsuseclassic=true
 
 # Syntax Highlighting Configuration
 #pygmentsCodeFences = true
-pygmentsStyle = "pygments-solarized-dark"
+#pygmentsStyle = "pygments-solarized-dark"
 #pygmentsOptions = "linenos=table"
 #pygmentsCodeFencesGuessSyntax = true
 
-pygmentsCodeFences = true
-pygmentsUseClasses = true
+#pygmentsCodeFences = true
+#pygmentsUseClasses = true
 #pygmentsOptions = "linenos=table"
 
 [params]
