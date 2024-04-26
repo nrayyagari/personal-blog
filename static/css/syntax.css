@@ -1,49 +1,68 @@
-/* Background color for code blocks */
-pre {
-    background-color: #f6f8fa;
+/* Light mode styles */
+:root {
+    --code-background-color: #f6f8fa;
+    --code-text-color: #24292e;
+    --code-keyword-color: #d73a49;
+    --code-function-color: #6f42c1;
+    --code-string-color: #032f62;
+    --code-comment-color: #6a737d;
+    --code-number-color: #005cc5;
+    --code-line-number-color: #959da5;
+  }
+  
+  /* Dark mode styles */
+  :root.dark-mode {
+    --code-background-color: #1e1e1e;
+    --code-text-color: #d4d4d4;
+    --code-keyword-color: #569cd6;
+    --code-function-color: #dcdcaa;
+    --code-string-color: #ce9178;
+    --code-comment-color: #6a9955;
+    --code-number-color: #b5cea8;
+    --code-line-number-color: #858585;
+  }
+  
+  /* Background color for code blocks */
+  pre {
+    background-color: var(--code-background-color);
     padding: 1em;
     border-radius: 5px;
+    overflow-x: auto;
   }
   
   /* Text color for code */
   pre code {
-    color: #24292e;
+    color: var(--code-text-color);
   }
   
   /* Keyword color */
   .k {
-    color: #d73a49;
+    color: var(--code-keyword-color);
   }
   
   /* Function color */
   .nf {
-    color: #6f42c1;
+    color: var(--code-function-color);
   }
   
   /* String color */
   .s {
-    color: #032f62;
+    color: var(--code-string-color);
   }
   
   /* Comment color */
   .c {
-    color: #6a737d;
+    color: var(--code-comment-color);
   }
   
   /* Number color */
   .mi, .mf {
-    color: #005cc5;
+    color: var(--code-number-color);
   }
   
   /* Line number color */
   .ln {
-    color: #959da5;
+    color: var(--code-line-number-color);
     margin-right: 1em;
-  }
-  
-  /* Increase the width of the code block */
-  pre {
-    width: 100%;
-    overflow-x: auto;
   }
   
