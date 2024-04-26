@@ -7,10 +7,12 @@ publishDir = "public"
 enableEmoji = true
 enableRobotsTXT = true
 pygmentsuseclassic=true
-#pygmentsstyle = "vs"
-pygmentsCodeFencesGuessSyntax = true
+
+# Syntax Highlighting Configuration
 pygmentsCodeFences = true
-pygmentsStyle = "friendly"
+pygmentsStyle = "vs"
+pygmentsOptions = "linenos=table"
+pygmentsCodeFencesGuessSyntax = true
 
 [params]
     author = "Nitin Ayyagari"
