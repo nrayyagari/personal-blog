@@ -68,15 +68,18 @@ Here's how you can build a multi-architecture Docker image:
 
 1. Enable Docker experimental features:
 
-   `export DOCKER_CLI_EXPERIMENTAL=enabled
-`
+   ```markdown
+   export DOCKER_CLI_EXPERIMENTAL=enabled
+   ```
 
 2. Create a new builder instance:
-```
+
+   ```python
    docker buildx create --name mybuilder
    docker buildx use mybuilder
    docker buildx inspect --bootstrap
-```
+   ```
+
 
 3. Build the multi-architecture image:
 ```
