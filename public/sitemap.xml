@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nitinayyagari.com/posts/second_post/</loc>
+    <loc>https://nitinayyagari.com/posts/fetching-metadata-of-helm-chart-repository---a-case-with-nexus/</loc>
     <lastmod>2024-02-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nitinayyagari.com/tags/helm/</loc>
@@ -17,7 +17,7 @@
     <loc>https://nitinayyagari.com/tags/</loc>
     <lastmod>2024-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nitinayyagari.com/posts/first_post/</loc>
+    <loc>https://nitinayyagari.com/posts/mastering-curl-for-api-development-and-testing/</loc>
     <lastmod>2023-10-11T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nitinayyagari.com/tags/networking/</loc>
@@ -26,8 +26,14 @@
     <loc>https://nitinayyagari.com/tags/web/</loc>
     <lastmod>2023-10-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://nitinayyagari.com/posts/docker-build-for-multiarch/</loc>
+    <lastmod>2023-05-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nitinayyagari.com/tags/docker/</loc>
+    <lastmod>2023-05-24T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nitinayyagari.com/about/</loc>
-    <lastmod>2015-01-27T00:00:00+00:00</lastmod>
+    <lastmod>2023-01-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nitinayyagari.com/general/</loc>
   </url><url>

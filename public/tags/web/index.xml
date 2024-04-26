@@ -10,9 +10,9 @@
     <atom:link href="https://nitinayyagari.com/tags/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mastering cURL for API Development and Testing</title>
-      <link>https://nitinayyagari.com/posts/first_post/</link>
+      <link>https://nitinayyagari.com/posts/mastering-curl-for-api-development-and-testing/</link>
       <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://nitinayyagari.com/posts/first_post/</guid>
+      <guid>https://nitinayyagari.com/posts/mastering-curl-for-api-development-and-testing/</guid>
       <description>As a developer working with APIs, having a reliable and versatile tool for making HTTP requests is very essential. cURL, a powerful command-line utility, is the perfect companion for API development and testing. In this blog post, we&amp;rsquo;ll explore how to leverage cURL to streamline your API workflow.&#xA;cool-beans Press play to see the video and enjoy.&#xA;1. Understanding cURL Basics cURL is designed with minimal behavior by default, only performing the necessary actions unless instructed otherwise .</description>
     </item>
   </channel>
