@@ -9,7 +9,7 @@ enableRobotsTXT = true
 pygmentsuseclassic=true
 
 # Syntax Highlighting Configuration
-pygmentsCodeFences = true
+#pygmentsCodeFences = true
 pygmentsStyle = "pygments-solarized-dark"
 #pygmentsOptions = "linenos=table"
 #pygmentsCodeFencesGuessSyntax = true
