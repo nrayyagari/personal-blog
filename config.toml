@@ -81,12 +81,13 @@ pygmentsStyle = "tango"
     tabWidth = 1
 
 
-#[markup]
-#[markup.goldmark]
-#[markup.goldmark.renderer]
-#unsafe = true
-#[markup.highlight]
-#style = "tango"
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+[markup.highlight]
+style = "tango"
+
 
 
 
