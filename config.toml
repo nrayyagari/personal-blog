@@ -22,9 +22,7 @@ pygmentsStyle = "tango"
     avatarURL = "/images/avatar.webp"
     avatarSize = "size-m"
     AvatarAltText = "Nitin Ayyagari"
-    customCSS = ["css/prism.min.css"]
-    customJS = ["js/prism.min.js"]
-    prism_syntax_highlighting = true
+    prism_syntax_highlighting = false
    
 
     #favicon_32 = "/img/favicon-32x32.png"
