@@ -7,7 +7,8 @@ publishDir = "public"
 enableEmoji = true
 enableRobotsTXT = true
 pygmentsUseClassic=true
-pygmentsStyle = "monokai"
+pygmentsStyle = "trac"
+pygmentsstyle = "trac"
 pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
 
