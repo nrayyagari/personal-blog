@@ -79,11 +79,15 @@ Here's how you can build a multi-architecture Docker image:
 ```
 
 3. Build the multi-architecture image:
+```markdown
 ```
    docker buildx build --platform linux/amd64,linux/arm64 -t my-app:latest .
 ```
+```
+   ```console
    This command builds the image for both x86-64 and ARM64 architectures and tags it as `my-app:latest`.
 
+   ```
 4. Push the image to a registry:
 ```
    docker buildx build --platform linux/amd64,linux/arm64 -t my-app:latest --push .
