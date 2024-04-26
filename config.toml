@@ -27,7 +27,7 @@ pygmentsStyle = "tango"
     avatarURL = "/images/avatar.webp"
     avatarSize = "size-m"
     AvatarAltText = "Nitin Ayyagari"
-    #customCSS = ["css/custom.css"]
+    customCSS = ["css/custom.css"]
     prism_syntax_highlighting = true
    
 
