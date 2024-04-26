@@ -5,8 +5,10 @@ theme = "gokarna"
 # disqusShortname = "username" # delete this to disable disqus comments
 publishDir = "public"
 enableEmoji = true
-pygmentsstyle = "vs"
 enableRobotsTXT = true
+pygmentsStyle = "abap"
+pygmentsCodefences = true
+pygmentsCodefencesGuessSyntax = true
 
 
 [params]
@@ -25,7 +27,9 @@ enableRobotsTXT = true
     colorscheme = "light"
     dateFormat = "2 January, 2006"
     togglePreviousAndNextButtons = "true"
-
+    pygmentsStyle = "abap"
+    pygmentsCodefences = true
+    pygmentsCodefencesGuessSyntax = true
 
     hidecredits = true
     hidecopyright = true
