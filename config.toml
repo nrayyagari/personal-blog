@@ -10,8 +10,8 @@ pygmentsuseclassic=true
 
 # Syntax Highlighting Configuration
 pygmentsCodeFences = true
-pygmentsStyle = "vs"
-pygmentsOptions = "linenos=table"
+pygmentsStyle = "autumn"
+#pygmentsOptions = "linenos=table"
 pygmentsCodeFencesGuessSyntax = true
 
 [params]
