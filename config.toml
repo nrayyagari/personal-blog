@@ -7,7 +7,7 @@ publishDir = "public"
 enableEmoji = true
 enableRobotsTXT = true
 pygmentsuseclassic=true
-pygmentsstyle = "b12"
+#pygmentsstyle = "b12"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
