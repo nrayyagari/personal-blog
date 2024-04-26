@@ -10,7 +10,7 @@ enableRobotsTXT = true
 
 # Syntax Highlighting Configuration
 #pygmentsCodeFences = true
-#pygmentsStyle = "pygments-solarized-dark"
+pygmentsStyle = "vs"
 #pygmentsOptions = "linenos=table"
 #pygmentsCodeFencesGuessSyntax = true
 
@@ -65,17 +65,18 @@ enableRobotsTXT = true
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     '''
 
-  #[markup]
-  #[markup.highlight]
-  #  codeFences = true
-  #  guessSyntax = true
-  #  hl_Lines = ""
-  #  lineNoStart = 1
-  #  lineNos = false
-  #  lineNumbersInTable = true
-  #  noClasses = false
-  #  style = "vs"
-  #  tabWidth = 1
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = false
+    style = "vs"
+    tabWidth = 1
+
 
 
 #[[menu.main]]
