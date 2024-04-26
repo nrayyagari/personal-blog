@@ -10,7 +10,7 @@ pygmentsuseclassic=true
 
 # Syntax Highlighting Configuration
 pygmentsCodeFences = true
-pygmentsStyle = "pygments"
+pygmentsStyle = "pygments-solarized-dark"
 #pygmentsOptions = "linenos=table"
 pygmentsCodeFencesGuessSyntax = true
 
