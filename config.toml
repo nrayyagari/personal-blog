@@ -75,6 +75,7 @@ pygmentsOptions = "linenos=table"
     style = "monokai"
     tabWidth = 4
 
+
 #[[menu.main]]
 #    url = "/"
 #    name = "Home"
@@ -117,9 +118,3 @@ pygmentsOptions = "linenos=table"
 #    pre = "<span data-feather='coffee'></span>"
 #    url = "https://www.buymeacoffee.com/nitinayyagari"
 #    weight = 6
-
-[markup]
-  [markup.tableOfContents]
-    startLevel = 1
-    endLevel = 3
-    ordered = false
