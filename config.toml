@@ -16,7 +16,7 @@ enableRobotsTXT = true
 
 pygmentsCodeFences = true
 pygmentsUseClasses = false
-pygmentsStyle = "b12"
+pygmentsStyle = "tango"
 
 [params]
     author = "Nitin Ayyagari"
@@ -86,7 +86,7 @@ pygmentsStyle = "b12"
 [markup.goldmark.renderer]
 unsafe = true
 [markup.highlight]
-style = "b12"
+style = "tango"
 
 
 
