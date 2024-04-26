@@ -8,8 +8,9 @@ enableEmoji = true
 enableRobotsTXT = true
 pygmentsuseclassic=true
 #pygmentsstyle = "b12"
-pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
+pygmentsCodeFences = true
+pygmentsStyle = "friendly"
 
 [params]
     author = "Nitin Ayyagari"
