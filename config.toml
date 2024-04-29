@@ -101,8 +101,8 @@ pygmentsStyle = "tango"
     weight = 4
 
 [[menu.main]]
-    url = "/pdf/cv_nitin_ayyagari.pdf"
-    name = "Resume"
+    url = "/pdf/nitinayyagari.pdf"
+    name = "CV"
     weight = 5
 
 [[menu.main]]
