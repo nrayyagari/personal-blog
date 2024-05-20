@@ -4,7 +4,7 @@
 .post-content pre,
 .post-content code {
   background-color: #f5f5f5 !important;
-  color: #333 !important;
+  color: lightskyblue !important;
 }
 
 /* Override the border and padding for code blocks */
