@@ -1,5 +1,10 @@
 /* static/css/custom.css */
 
+/* Change the hover color for post titles */
+.post-title a:hover {
+  color: blue !important;
+}
+
 /* Override the background color and text color for code blocks */
 .post-content pre,
 .post-content code {
