@@ -2,14 +2,14 @@
 
 /* Change the hover color for post titles */
 .post-title a:hover {
-  color: blue !important;
+  color: lightskyblue !important;
 }
 
 /* Override the background color and text color for code blocks */
 .post-content pre,
 .post-content code {
   background-color: #f5f5f5 !important;
-  color: lightskyblue !important;
+  color: #333 !important;
 }
 
 /* Override the border and padding for code blocks */
