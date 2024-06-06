@@ -1,5 +1,5 @@
 ---
-title: Problems - Bad or Good?
+title: Problem - Bad or Good One?
 date: 2024-06-05
 type: post
 tags: ["generic"]
