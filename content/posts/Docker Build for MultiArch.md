@@ -16,7 +16,7 @@ In recent years, ARM-based chips have gained significant popularity in the compu
 
 ARM-based chips, like AWS Graviton and Apple's M1, are designed to deliver high performance while consuming less power. This makes them an attractive option for cloud providers and users looking to optimize costs and reduce their carbon footprint. As a result, more and more applications are being deployed on ARM-based infrastructure.
 
-```markup
+```python
 def hello_world():
     print("Hello, World!")
 ```
@@ -25,7 +25,7 @@ def hello_world():
 
 Traditionally, building a Docker image involves creating a Dockerfile that defines the steps to build your application. Here's a simple example:
 
-```markup
+```dockerfile
 FROM node:14
 
 WORKDIR /app
@@ -36,13 +36,11 @@ RUN npm install
 COPY . .
 
 CMD ["npm", "start"]
-
 ```
-
 
 To build the image, you run the following command:
 
-```python
+```bash
 docker build -t my-app .
 ```
 
@@ -62,31 +60,31 @@ Here's how you can build a multi-architecture Docker image:
 
 1. Enable Docker experimental features:
 
-```markup
-   export DOCKER_CLI_EXPERIMENTAL=enabled
+```bash
+export DOCKER_CLI_EXPERIMENTAL=enabled
 ```
 
 2. Create a new builder instance:
 
-```markup
-   docker buildx create --name mybuilder
-   docker buildx use mybuilder
-   docker buildx inspect --bootstrap
+```bash
+docker buildx create --name mybuilder
+docker buildx use mybuilder
+docker buildx inspect --bootstrap
 ```
 
 3. Build the multi-architecture image
 
-```markup
-   docker buildx build --platform linux/amd64,linux/arm64 -t my-app:latest .
+```bash
+docker buildx build --platform linux/amd64,linux/arm64 -t my-app:latest .
 ```
-   This command builds the image for both x86-64 and ARM64 architectures and tags it as `my-app:latest` .
+This command builds the image for both x86-64 and ARM64 architectures and tags it as `my-app:latest` .
 
 4. Push the image to a registry
 
-```markup
-   docker buildx build --platform linux/amd64,linux/arm64 -t my-app:latest --push .
+```bash
+docker buildx build --platform linux/amd64,linux/arm64 -t my-app:latest --push .
 ```
-   By adding the `--push` flag, the built images are automatically pushed to the configured registry.
+By adding the `--push` flag, the built images are automatically pushed to the configured registry.
 
 ## Conclusion
 

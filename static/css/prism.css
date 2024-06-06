@@ -220,3 +220,27 @@ pre .line-highlight {
 	margin-top: 0;
 }
 
+
+/* Dark mode styles */
+@media (prefers-color-scheme: dark) {
+  pre[class*="language-"] > code {
+    border-left: 10px solid #444;
+    box-shadow: -1px 0px 0px 0px #444, 0px 0px 0px 1px #333;
+    background-color: #2d2d2d;
+    background-image: linear-gradient(transparent 50%, rgba(255, 255, 255, 0.04) 50%);
+  }
+
+  code[class*="language-"] {
+    color: #f8f8f2;
+  }
+
+  :not(pre) > code[class*="language-"],
+  pre[class*="language-"] {
+    background-color: #2d2d2d;
+  }
+
+  :not(pre) > code[class*="language-"] {
+    color: #f8f8f2;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+}
