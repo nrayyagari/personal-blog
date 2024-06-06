@@ -2,12 +2,11 @@
 type: page
 ---
 
+- [Problems: Bad or Good?](/general/problem-good-bad/)
+
 ## Productivity
 - [Tatooine](/projects/tatooine/)
 - [Hydra](/projects/hydra/)
 
-## Well being
-- [Jump Rope](/general/problem-good-bad/)
-
-## Books
+## Health
 - [Jump Rope](/general/sample/)
