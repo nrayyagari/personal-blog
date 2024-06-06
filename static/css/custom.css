@@ -36,13 +36,14 @@
 /* Style for the copy icon */
 .copy-icon {
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 5px;
+  top: 5px;
+  right: 5px;
+  padding: 2px 5px;
   background: transparent;
   border: none;
   cursor: pointer;
   font-size: 16px;
+  color: #ccc;
 }
 
 .copy-icon:hover {
@@ -51,4 +52,5 @@
 
 pre {
   position: relative;
+  padding-top: 1.5em; /* Adjust padding to make space for the icon */
 }

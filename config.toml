@@ -65,6 +65,7 @@ pygmentsStyle = "tango"
           const button = document.createElement('button');
           button.className = 'copy-icon';
           button.innerHTML = '📋';
+          pre.style.position = 'relative';
           pre.appendChild(button);
 
           button.addEventListener('click', () => {
