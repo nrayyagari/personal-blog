@@ -22,5 +22,5 @@ I quickly brainstormed. What can be some good problems to have?
 
 In all the above scenarios, I realised that the actual question we should ask ourselves is: Imagine when you come out of that difficult/unknown situation, how are you going to be? Aren't you going to be a better version of yourself? There lies the answer.
 
-PS: It's important to acknowledge that not all problems are good. There are definitely bad ones that can cause real hardship, like health issues or financial struggles. However, my overall point is about: embracing the problems that push you to grow, see them as stepping stones towards a better you
+PS: It's important to acknowledge that not all problems are good. There are definitely bad ones that can cause real hardship, like health issues or financial struggles. However, my overall point is about: embracing the ones that push you to grow, see them as stepping stones towards a better you
 
