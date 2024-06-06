@@ -63,16 +63,16 @@ pygmentsStyle = "tango"
       document.addEventListener('DOMContentLoaded', (event) => {
         document.querySelectorAll('pre').forEach((pre) => {
           const button = document.createElement('button');
-          button.className = 'copy-button';
-          button.textContent = 'Copy';
+          button.className = 'copy-icon';
+          button.innerHTML = '📋';
           pre.appendChild(button);
 
           button.addEventListener('click', () => {
             const code = pre.querySelector('code').innerText;
             navigator.clipboard.writeText(code).then(() => {
-              button.textContent = 'Copied!';
+              button.innerHTML = '✅';
               setTimeout(() => {
-                button.textContent = 'Copy';
+                button.innerHTML = '📋';
               }, 2000);
             });
           });
