@@ -18,3 +18,15 @@
   padding: 0.5em !important;
   border-radius: 4px !important;
 }
+
+/* Add dark mode styles for code blocks */
+@media (prefers-color-scheme: dark) {
+  .post-content pre,
+  .post-content code {
+    background-color: #2d2d2d !important;
+    color: #f8f8f2 !important;
+  }
+  .post-content pre {
+    border: 1px solid #444 !important;
+  }
+}
