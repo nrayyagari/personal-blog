@@ -59,27 +59,6 @@ pygmentsStyle = "tango"
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css" media="(prefers-color-scheme: dark)">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', (event) => {
-        document.querySelectorAll('pre').forEach((pre) => {
-          const button = document.createElement('button');
-          button.className = 'copy-icon';
-          button.innerHTML = '📋';
-          pre.style.position = 'relative';
-          pre.appendChild(button);
-
-          button.addEventListener('click', () => {
-            const code = pre.querySelector('code').innerText;
-            navigator.clipboard.writeText(code).then(() => {
-              button.innerHTML = '✅';
-              setTimeout(() => {
-                button.innerHTML = '📋';
-              }, 2000);
-            });
-          });
-        });
-      });
-    </script>
     '''
 
 

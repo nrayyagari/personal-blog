@@ -33,24 +33,12 @@
   }
 }
 
-/* Style for the copy icon */
+/* Remove the copy icon styles */
 .copy-icon {
-  position: absolute;
-  top: 5px;
-  right: 5px;
-  padding: 2px 5px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  color: #ccc;
-}
-
-.copy-icon:hover {
-  color: #007bff;
+  display: none;
 }
 
 pre {
   position: relative;
-  padding-top: 1.5em; /* Adjust padding to make space for the icon */
+  padding-top: 0; /* Reset padding */
 }
