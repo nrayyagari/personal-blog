@@ -32,3 +32,25 @@
     border-radius: 4px !important;
   }
 }
+
+/* Style for the copy button */
+.copy-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 0 0 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.copy-button:hover {
+  background: #0056b3;
+}
+
+pre {
+  position: relative;
+}
