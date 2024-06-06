@@ -1,4 +1,10 @@
-## Problem. Bad or Good?
+---
+title: Problems: Bad or Good?
+type: page
+tags: ["Generic"]
+---
+
+## Problems: Bad or Good?
 
 Last year, I was talking to a Co-founder of a company I was interviewing for. 
 
