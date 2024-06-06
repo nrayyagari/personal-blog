@@ -1,6 +1,6 @@
 ---
 title: Problems - Bad or Good?
-date: 2024-03-24
+date: 2024-06-05
 type: post
 tags: ["generic"]
 showTableOfContents: false
