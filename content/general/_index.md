@@ -2,7 +2,7 @@
 type: page
 ---
 
-- [Problems: Bad or Good?](/general/problem-good-bad/)
+- [Problems: Bad or Good?](/general/problemgoodbad/)
 
 ## Productivity
 - [Tatooine](/projects/tatooine/)

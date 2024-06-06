@@ -1,8 +1,9 @@
 ---
 title: Problems: Bad or Good?
-type: page
-tags: ["Generic"]
----
+date: 2024-03-24
+type: post
+tags: ["generic"]
+showTableOfContents: false
 
 ## Problems: Bad or Good?
 
