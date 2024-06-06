@@ -1,6 +1,6 @@
 ---
 title: Problem - Bad or Good One?
-date: 2024-06-05
+date: 2024-06-07
 type: post
 tags: ["generic"]
 showTableOfContents: false
