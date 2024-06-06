@@ -6,13 +6,13 @@ tags: ["generic"]
 showTableOfContents: false
 ---
 
-## Problems: Bad or Good?
-
 Last year, I was talking to a Co-founder of a company I was interviewing for. 
 
 We were talking about their presence in Hyderabad, how they grew into a niche service startup that was solving problems for their customers. He was giving me a peek into their future plans, how the Hyderabad office real estate market has shot up exponentially in the last 5 years and so forth.
 
-What caught my attention was, when he said: "Yes, we are planning to expand, it's difficult to find a good office space but **It's a good problem to have!**". While I was heading home after our meet, that thought stayed in my head for a long time. Until then, it didn't occur to me that problems can indeed be good. What a positive way to look at it. Sure he's going to splurge a bit more than he would want to, for the new office, but growing business and expanding workforce to meet demand is a delightful problem to have. Isn't it?
+What caught my attention was, when he said: "Yes, we are planning to expand, it's difficult to find a good office space but **It's a good problem to have!**". While I was heading home after our meet, that thought stayed in my head for a long time. 
+
+Until then, it didn't occur to me that problems can indeed be good. What a positive way to look at it. Sure he's going to splurge a bit more than he would want to, for the new office, but growing business and expanding workforce to meet demand is a delightful problem to have. Isn't it?
 
 I quickly brainstormed. What can be some good problems to have?
 
