@@ -2,6 +2,7 @@
 type: page
 ---
 
+## General
 - [Problem: Bad or Good One?](/general/problem-bad-or-good-one/)
 
 ## Productivity
