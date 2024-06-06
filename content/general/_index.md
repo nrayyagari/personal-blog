@@ -7,7 +7,7 @@ type: page
 - [Hydra](/projects/hydra/)
 
 ## Well being
-- [Jump Rope](/general/sample/)
+- [Jump Rope](/general/problem-good-bad/)
 
 ## Books
 - [Jump Rope](/general/sample/)
