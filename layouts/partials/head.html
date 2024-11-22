@@ -1,28 +1,16 @@
-{{ define "main" }}
-<div class="container">
-    <article class="post-single">
-        <header class="post-header">
-            <h1 class="post-title">{{ .Title }}</h1>
-            <div class="post-meta">
-                {{ partial "post-meta.html" . }}
-            </div>
-        </header>
-        {{ if .Params.showTableOfContents }}
-            {{ partial "toc.html" . }}
-        {{ end }}
-        <div class="post-content">
-            {{ .Content }}
-        </div>
-        {{ partial "post-footer.html" . }}
-    </article>
-</div>
+{{ partial "head/meta.html" . }}
+{{ partial "head/link.html" . }}
+{{ partial "head/custom.html" . }}
 
 <style>
+/* Code block styles */
 .post-content pre {
     position: relative;
-    padding-top: 2.5em;  /* Make room for copy button */
+    margin: 1.5em 0;
+    border-radius: 8px;
 }
 
+/* Copy button styles */
 .copy-button {
     position: absolute;
     top: 5px;
@@ -36,6 +24,7 @@
     cursor: pointer;
     opacity: 0.9;
     transition: opacity 0.3s, background-color 0.3s;
+    z-index: 10;
 }
 
 .copy-button:hover {
@@ -89,4 +78,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 </script>
-{{ end }}
