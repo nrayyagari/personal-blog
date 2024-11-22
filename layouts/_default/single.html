@@ -1,0 +1,92 @@
+{{ define "main" }}
+<div class="container">
+    <article class="post-single">
+        <header class="post-header">
+            <h1 class="post-title">{{ .Title }}</h1>
+            <div class="post-meta">
+                {{ partial "post-meta.html" . }}
+            </div>
+        </header>
+        {{ if .Params.showTableOfContents }}
+            {{ partial "toc.html" . }}
+        {{ end }}
+        <div class="post-content">
+            {{ .Content }}
+        </div>
+        {{ partial "post-footer.html" . }}
+    </article>
+</div>
+
+<style>
+.post-content pre {
+    position: relative;
+    padding-top: 2.5em;  /* Make room for copy button */
+}
+
+.copy-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #444;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.3s, background-color 0.3s;
+}
+
+.copy-button:hover {
+    opacity: 1;
+    background-color: #666;
+}
+
+.copy-button.copied {
+    background-color: #28a745;
+}
+</style>
+
+<script>
+function createCopyButton(codeBlock) {
+    // Create the copy button
+    const button = document.createElement("button");
+    button.className = "copy-button";
+    button.textContent = "Copy";
+    
+    // Add click handler
+    button.addEventListener("click", async () => {
+        try {
+            const code = codeBlock.querySelector("code").innerText;
+            await navigator.clipboard.writeText(code);
+            
+            // Visual feedback
+            button.textContent = "Copied!";
+            button.classList.add("copied");
+            
+            // Reset after 2 seconds
+            setTimeout(() => {
+                button.textContent = "Copy";
+                button.classList.remove("copied");
+            }, 2000);
+        } catch (err) {
+            button.textContent = "Failed";
+            console.error("Failed to copy:", err);
+        }
+    });
+    
+    return button;
+}
+
+// Add copy buttons to all code blocks
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("pre").forEach(pre => {
+        if (pre.querySelector("code")) {
+            const copyButton = createCopyButton(pre);
+            pre.appendChild(copyButton);
+        }
+    });
+});
+</script>
+{{ end }}

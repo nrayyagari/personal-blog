@@ -1,0 +1,33 @@
+/* Code block styles */
+.post-content pre {
+    position: relative;
+    margin: 1.5em 0;
+    border-radius: 8px;
+    background-color: #282c34;
+}
+
+/* Copy button styles */
+.copy-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #444;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.3s, background-color 0.3s;
+    z-index: 10;
+}
+
+.copy-button:hover {
+    opacity: 1;
+    background-color: #666;
+}
+
+.copy-button.copied {
+    background-color: #28a745;
+}

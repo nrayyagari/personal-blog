@@ -44,6 +44,8 @@ pygmentsStyle = "monokai"
       {name = "email", url = "mailto:nitinayyagari@outlook.com"}
     ]
 
+    customCSS = ["css/custom.css"]
+
     customHeadHTML = '''
     <script defer src="https://analytics.eu.umami.is/script.js" data-website-id="92a77bfe-037b-46a0-bddf-5322f30823eb"></script>
     <script type="text/javascript">
