@@ -2,16 +2,14 @@ baseURL = "https://nitinayyagari.com/"
 languageCode = "en-us"
 title = "Nitin Ayyagari"
 theme = "gokarna"
-# disqusShortname = "username" # delete this to disable disqus comments
 publishDir = "public"
 enableEmoji = true
 enableRobotsTXT = true
-#pygmentsuseclassic=true
 
 # Syntax Highlighting Configuration
 pygmentsCodeFences = true
-pygmentsUseClasses = false
-pygmentsStyle = "tango"
+pygmentsUseClasses = true
+pygmentsStyle = "monokai"
 
 [params]
     author = "Nitin Ayyagari"
@@ -22,8 +20,7 @@ pygmentsStyle = "tango"
     avatarURL = "/images/avatar.webp"
     avatarSize = "size-m"
     AvatarAltText = "Nitin Ayyagari"
-    prism_syntax_highlighting = false
-   
+    prism_syntax_highlighting = true
 
     #favicon_32 = "/img/favicon-32x32.png"
     #favicon_16 = "/img/favicon-16x16.png"
@@ -72,7 +69,7 @@ pygmentsStyle = "tango"
     lineNos = false
     lineNumbersInTable = true
     noClasses = false
-    style = "tango"
+    style = "monokai"
     tabWidth = 1
 
 #[[menu.main]]
