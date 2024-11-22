@@ -1,0 +1,76 @@
+<style>
+/* Style for copy button */
+.code-block-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0.5em;
+    background: #2d2d2d;
+    border-bottom: 1px solid #444;
+}
+
+.copy-code-button {
+    display: flex;
+    align-items: center;
+    background-color: #444;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.8em;
+    padding: 4px 8px;
+    transition: background-color 0.2s;
+}
+
+.copy-code-button:hover {
+    background-color: #666;
+}
+
+.copy-code-button:active {
+    background-color: #222;
+}
+
+.copy-code-button::before {
+    content: "Copy";
+}
+
+.copy-code-button.copied::before {
+    content: "Copied!";
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre > code').forEach((codeBlock) => {
+        // Create header div
+        const header = document.createElement('div');
+        header.className = 'code-block-header';
+        
+        // Create copy button
+        const copyButton = document.createElement('button');
+        copyButton.className = 'copy-code-button';
+        
+        // Add button to header
+        header.appendChild(copyButton);
+        
+        // Add header before code block
+        const pre = codeBlock.parentNode;
+        pre.parentNode.insertBefore(header, pre);
+        
+        // Add click handler
+        copyButton.addEventListener('click', () => {
+            // Copy code to clipboard
+            navigator.clipboard.writeText(codeBlock.textContent)
+                .then(() => {
+                    // Visual feedback
+                    copyButton.classList.add('copied');
+                    setTimeout(() => {
+                        copyButton.classList.remove('copied');
+                    }, 2000);
+                })
+                .catch((error) => {
+                    console.error('Failed to copy code:', error);
+                });
+        });
+    });
+});
+</script>
