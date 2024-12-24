@@ -1,0 +1,47 @@
+/* Ensure code blocks have proper positioning */
+.highlight {
+    position: relative !important;
+    overflow: visible !important;
+}
+
+.highlight pre {
+    overflow-x: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Style the copy button */
+.copy-code-button {
+    position: absolute !important;
+    z-index: 100 !important;
+    right: 5px !important;
+    top: 5px !important;
+    font-size: 14px !important;
+    font-family: inherit !important;
+    font-weight: 500 !important;
+    padding: 8px 12px !important;
+    border: none !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: #fff !important;
+    border-radius: 4px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+}
+
+.copy-code-button:hover {
+    background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.copy-code-button.copied {
+    background: #28a745 !important;
+    color: white !important;
+}
+
+/* Ensure the button is visible on all backgrounds */
+.copy-code-button {
+    text-shadow: none !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
