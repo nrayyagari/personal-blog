@@ -1,10 +1,6 @@
 <style>
 /* Style for code blocks */
-.highlight {
-    position: relative;
-}
-
-.code-block-container {
+div.highlight {
     position: relative;
 }
 
@@ -12,65 +8,55 @@
     position: absolute;
     top: 0.5rem;
     right: 0.5rem;
-    padding: 0.4rem;
-    background: #444;
-    border: 1px solid #666;
-    border-radius: 0.3rem;
+    padding: 0.4rem 0.8rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
     color: #fff;
-    text-transform: uppercase;
     font-size: 0.8rem;
-    font-weight: bold;
-    opacity: 0.6;
     cursor: pointer;
-    transition: opacity 0.2s, background 0.2s;
+    transition: all 0.2s ease;
     display: flex;
     align-items: center;
     gap: 0.3rem;
+    z-index: 100;
 }
 
 .copy-code-button:hover {
-    opacity: 1;
-    background: #666;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
 }
 
 .copy-code-button.copied {
-    background: #28a745;
+    background-color: #28a745;
     border-color: #28a745;
 }
 
-/* Dark mode styles */
-@media (prefers-color-scheme: dark) {
-    .copy-code-button {
-        background: #666;
-        border-color: #888;
-    }
-    .copy-code-button:hover {
-        background: #888;
-    }
-}
-
-/* Add copy icon using emoji for simplicity */
 .copy-icon::before {
     content: "📋";
     font-size: 1rem;
+}
+
+/* Dark mode specific styles */
+@media (prefers-color-scheme: dark) {
+    .copy-code-button {
+        background-color: rgba(255, 255, 255, 0.1);
+        border-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .copy-code-button:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-color: rgba(255, 255, 255, 0.3);
+    }
 }
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-    // Wrap all pre elements in a container
-    document.querySelectorAll('pre').forEach(pre => {
-        if (!pre.parentElement.classList.contains('code-block-container')) {
-            const container = document.createElement('div');
-            container.className = 'code-block-container';
-            pre.parentNode.insertBefore(container, pre);
-            container.appendChild(pre);
-        }
-    });
-
     // Add copy button to all code blocks
-    document.querySelectorAll('.code-block-container').forEach(container => {
-        if (!container.querySelector('.copy-code-button')) {
+    document.querySelectorAll('div.highlight').forEach(highlight => {
+        // Only add button if it doesn't already have one
+        if (!highlight.querySelector('.copy-code-button')) {
             const button = document.createElement('button');
             button.className = 'copy-code-button';
             
@@ -82,26 +68,26 @@ document.addEventListener('DOMContentLoaded', () => {
             text.textContent = 'Copy';
             button.appendChild(text);
             
-            container.appendChild(button);
+            highlight.appendChild(button);
             
             button.addEventListener('click', async () => {
-                const pre = container.querySelector('pre');
+                // Find the code element within the highlight div
+                const pre = highlight.querySelector('pre');
                 const code = pre.querySelector('code') || pre;
-                const text = code.textContent;
+                const text = code.textContent || code.innerText;
                 
                 try {
                     await navigator.clipboard.writeText(text);
                     button.classList.add('copied');
-                    const originalText = button.querySelector('span:last-child').textContent;
                     button.querySelector('span:last-child').textContent = 'Copied!';
                     
                     setTimeout(() => {
                         button.classList.remove('copied');
-                        button.querySelector('span:last-child').textContent = originalText;
+                        button.querySelector('span:last-child').textContent = 'Copy';
                     }, 2000);
                 } catch (err) {
                     console.error('Failed to copy:', err);
-                    button.textContent = 'Error!';
+                    button.querySelector('span:last-child').textContent = 'Error!';
                 }
             });
         }
