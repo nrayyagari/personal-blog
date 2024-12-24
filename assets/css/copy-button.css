@@ -6,22 +6,38 @@ pre {
     position: absolute !important;
     right: 0.5em !important;
     top: 0.5em !important;
-    padding: 0.3em 0.8em !important;
-    background: rgba(255, 255, 255, 0.15) !important;
-    color: #fff !important;
+    width: 35px !important;
+    height: 35px !important;
+    padding: 8px !important;
+    background: rgba(255, 255, 255, 0.1) !important;
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
     border-radius: 4px !important;
     cursor: pointer !important;
-    font-size: 0.8em !important;
+    opacity: 0.8 !important;
     transition: all 0.2s ease !important;
     z-index: 999999 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.copy-button svg {
+    width: 18px !important;
+    height: 18px !important;
+    fill: #fff !important;
 }
 
 .copy-button:hover {
-    background: rgba(255, 255, 255, 0.25) !important;
+    opacity: 1 !important;
+    background: rgba(255, 255, 255, 0.2) !important;
 }
 
 .copy-button.success {
     background: #28a745 !important;
     border-color: #28a745 !important;
+    opacity: 1 !important;
+}
+
+.copy-button.success svg {
+    fill: #fff !important;
 }
