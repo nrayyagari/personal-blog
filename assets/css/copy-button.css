@@ -1,43 +1,34 @@
-pre {
+.highlight {
     position: relative !important;
 }
 
 .copy-button {
     position: absolute !important;
-    right: 0.5em !important;
-    top: 0.5em !important;
-    width: 35px !important;
-    height: 35px !important;
-    padding: 8px !important;
-    background: rgba(255, 255, 255, 0.1) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    border-radius: 4px !important;
+    top: 8px !important;
+    right: 8px !important;
+    width: 30px !important;
+    height: 30px !important;
+    padding: 6px !important;
+    background: transparent !important;
+    border: none !important;
     cursor: pointer !important;
-    opacity: 0.8 !important;
-    transition: all 0.2s ease !important;
-    z-index: 999999 !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    z-index: 999999 !important;
+    color: #9e9e9e !important;
+    transition: color 0.2s ease !important;
+}
+
+.copy-button:hover {
+    color: #fff !important;
 }
 
 .copy-button svg {
     width: 18px !important;
     height: 18px !important;
-    fill: #fff !important;
-}
-
-.copy-button:hover {
-    opacity: 1 !important;
-    background: rgba(255, 255, 255, 0.2) !important;
 }
 
 .copy-button.success {
-    background: #28a745 !important;
-    border-color: #28a745 !important;
-    opacity: 1 !important;
-}
-
-.copy-button.success svg {
-    fill: #fff !important;
+    color: #28a745 !important;
 }
