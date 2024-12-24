@@ -6,68 +6,72 @@
 
 .copy-button {
     position: absolute;
-    top: 5px;
-    right: 5px;
-    padding: 5px 10px;
-    font-size: 12px;
-    color: #ffffff;
-    background-color: #444;
+    right: 8px;
+    top: 8px;
+    padding: 2px;
+    background: transparent;
     border: none;
-    border-radius: 4px;
+    color: #666;
     cursor: pointer;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+}
+
+.copy-button::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url('data:image/svg+xml,<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path></svg>');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}
+
+.copy-button:hover::before {
+    opacity: 0.8;
+}
+
+.copy-button.success {
+    color: #28a745;
+}
+
+[data-theme="dark"] .copy-button::before {
+    background-image: url('data:image/svg+xml,<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path fill="white" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path></svg>');
+    opacity: 0.7;
+}
+
+[data-theme="dark"] .copy-button:hover::before {
     opacity: 0.9;
-    transition: opacity 0.3s, background-color 0.3s;
-    z-index: 10;
-}
-
-.copy-button:hover {
-    opacity: 1;
-    background-color: #666;
-}
-
-.copy-button.copied {
-    background-color: #28a745;
 }
 </style>
 
 <script>
-function createCopyButton(codeBlock) {
-    // Create the copy button
-    const button = document.createElement("button");
-    button.className = "copy-button";
-    button.textContent = "Copy";
-    
-    // Add click handler
-    button.addEventListener("click", async () => {
-        try {
-            const code = codeBlock.querySelector("code").innerText;
-            await navigator.clipboard.writeText(code);
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('pre').forEach(function(pre) {
+        if (pre.querySelector('.copy-button')) return;
+        
+        var button = document.createElement('button');
+        button.className = 'copy-button';
+        button.setAttribute('aria-label', 'Copy code');
+        
+        button.addEventListener('click', function() {
+            var code = pre.querySelector('code') || pre;
+            var text = code.innerText;
             
-            // Visual feedback
-            button.textContent = "Copied!";
-            button.classList.add("copied");
-            
-            // Reset after 2 seconds
-            setTimeout(() => {
-                button.textContent = "Copy";
-                button.classList.remove("copied");
-            }, 2000);
-        } catch (err) {
-            button.textContent = "Failed";
-            console.error("Failed to copy:", err);
-        }
-    });
-    
-    return button;
-}
-
-// Add copy buttons to all code blocks
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll("pre").forEach(pre => {
-        if (pre.querySelector("code")) {
-            const copyButton = createCopyButton(pre);
-            pre.appendChild(copyButton);
-        }
+            navigator.clipboard.writeText(text).then(function() {
+                button.classList.add('success');
+                
+                setTimeout(function() {
+                    button.classList.remove('success');
+                }, 2000);
+            });
+        });
+        
+        pre.appendChild(button);
     });
 });
 </script>
