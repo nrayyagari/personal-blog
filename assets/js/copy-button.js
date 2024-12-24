@@ -1,29 +1,3 @@
-<style>
-.copy-button {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 8px 16px;
-    margin: 8px;
-    background: #444;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 13px;
-    z-index: 999;
-}
-
-.copy-button:hover {
-    background: #666;
-}
-
-.copy-button.success {
-    background: #28a745;
-}
-</style>
-
-<script>
 document.addEventListener('DOMContentLoaded', function() {
     // Add copy button to each code block
     document.querySelectorAll('pre').forEach(function(pre) {
@@ -61,4 +35,3 @@ document.addEventListener('DOMContentLoaded', function() {
         pre.appendChild(button);
     });
 });
-</script>

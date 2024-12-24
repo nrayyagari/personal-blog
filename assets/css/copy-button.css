@@ -1,0 +1,27 @@
+pre {
+    position: relative !important;
+}
+
+.copy-button {
+    position: absolute !important;
+    right: 0.5em !important;
+    top: 0.5em !important;
+    padding: 0.3em 0.8em !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+    color: #fff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 4px !important;
+    cursor: pointer !important;
+    font-size: 0.8em !important;
+    transition: all 0.2s ease !important;
+    z-index: 999999 !important;
+}
+
+.copy-button:hover {
+    background: rgba(255, 255, 255, 0.25) !important;
+}
+
+.copy-button.success {
+    background: #28a745 !important;
+    border-color: #28a745 !important;
+}

@@ -1,0 +1,5 @@
+{{ $copyCss := resources.Get "css/copy-button.css" | minify }}
+<link rel="stylesheet" href="{{ $copyCss.RelPermalink }}">
+
+{{ $copyJs := resources.Get "js/copy-button.js" | minify }}
+<script src="{{ $copyJs.RelPermalink }}"></script>
