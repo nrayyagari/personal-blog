@@ -1,77 +1,103 @@
 <style>
 /* Copy button styles */
-.post-content pre {
+.highlight {
     position: relative;
+}
+
+.highlight pre {
+    padding-right: 2.5em;
 }
 
 .copy-button {
     position: absolute;
-    right: 8px;
-    top: 8px;
-    padding: 2px;
-    background: transparent;
-    border: none;
-    color: #666;
+    top: 0.5em;
+    right: 0.5em;
+    width: 2em;
+    height: 2em;
+    padding: 0.4em;
+    background: #f6f8fa;
+    border: 1px solid #d0d7de;
+    border-radius: 6px;
     cursor: pointer;
-    width: 16px;
-    height: 16px;
+    opacity: 0;
+    transition: all 0.2s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0;
+}
+
+[data-theme="dark"] .copy-button {
+    background: #2d333b;
+    border-color: #444c56;
+}
+
+.highlight:hover .copy-button {
+    opacity: 1;
+}
+
+.copy-button:hover {
+    background-color: #f3f4f6;
+    border-color: #afb8c1;
+}
+
+[data-theme="dark"] .copy-button:hover {
+    background-color: #363b42;
+    border-color: #768390;
 }
 
 .copy-button::before {
     content: "";
-    width: 16px;
-    height: 16px;
-    background-image: url('data:image/svg+xml,<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path></svg>');
-    background-size: contain;
+    width: 100%;
+    height: 100%;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%236e7681" viewBox="0 0 16 16"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25z"/><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25z"/></svg>');
     background-repeat: no-repeat;
-    opacity: 0.6;
+    background-position: center;
+    background-size: contain;
 }
 
-.copy-button:hover::before {
-    opacity: 0.8;
-}
-
-.copy-button.success {
-    color: #28a745;
+.copy-button.success::before {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%2328a745" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/></svg>');
 }
 
 [data-theme="dark"] .copy-button::before {
-    background-image: url('data:image/svg+xml,<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" xmlns="http://www.w3.org/2000/svg"><path fill="white" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25Z"></path><path fill="white" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path></svg>');
-    opacity: 0.7;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23adbac7" viewBox="0 0 16 16"><path d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25z"/><path d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25z"/></svg>');
 }
 
-[data-theme="dark"] .copy-button:hover::before {
-    opacity: 0.9;
+[data-theme="dark"] .copy-button.success::before {
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%2328a745" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0Z"/></svg>');
 }
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('pre').forEach(function(pre) {
-        if (pre.querySelector('.copy-button')) return;
-        
-        var button = document.createElement('button');
+    // Add copy buttons to all code blocks
+    document.querySelectorAll('.highlight').forEach(function(highlightDiv) {
+        // Skip if already has a copy button
+        if (highlightDiv.querySelector('.copy-button')) return;
+
+        const button = document.createElement('button');
         button.className = 'copy-button';
         button.setAttribute('aria-label', 'Copy code');
-        
-        button.addEventListener('click', function() {
-            var code = pre.querySelector('code') || pre;
-            var text = code.innerText;
-            
-            navigator.clipboard.writeText(text).then(function() {
+        button.setAttribute('title', 'Copy code');
+
+        button.addEventListener('click', async () => {
+            // Get the code content
+            const pre = highlightDiv.querySelector('pre');
+            const code = pre.querySelector('code') || pre;
+            const text = code.innerText;
+
+            try {
+                await navigator.clipboard.writeText(text);
                 button.classList.add('success');
-                
-                setTimeout(function() {
+                setTimeout(() => {
                     button.classList.remove('success');
                 }, 2000);
-            });
+            } catch (err) {
+                console.error('Failed to copy:', err);
+            }
         });
-        
-        pre.appendChild(button);
+
+        highlightDiv.appendChild(button);
     });
 });
 </script>
