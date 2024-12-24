@@ -1,89 +1,114 @@
 <style>
-.highlight {
-    position: relative;
-}
-
-.copy-button {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    padding: 8px 12px;
-    font-size: 13px;
-    color: #666;
-    background: #f8f9fa;
-    border: 1px solid #dee2e6;
-    border-radius: 6px;
-    cursor: pointer;
-    opacity: 0;
-    transition: 0.2s;
-    z-index: 2;
-}
-
-.highlight:hover .copy-button {
-    opacity: 1;
-}
-
-[data-theme="dark"] .copy-button {
-    background: #2d333b;
-    border-color: #444c56;
-    color: #adbac7;
-}
-
-.highlight pre {
-    padding-right: 40px;
-}
-</style>
-
-<script>
-function addCopyButtons() {
-    // Target both Hugo's default and Prism.js code blocks
-    const codeBlocks = document.querySelectorAll('pre[class*="language-"], .highlight');
+    .highlight {
+        position: relative;
+    }
     
-    codeBlocks.forEach((block) => {
-        // Skip if already has a button
-        if (block.querySelector('.copy-button')) return;
+    .copy-button {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px 8px;
+        border-radius: 6px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        opacity: 0;
+        transition: opacity 0.2s, background-color 0.2s;
+    }
+    
+    .highlight:hover .copy-button {
+        opacity: 0.6;
+    }
+    
+    .copy-button:hover {
+        opacity: 1 !important;
+        background-color: var(--color-neutral-muted, rgba(110, 118, 129, 0.4));
+    }
+    
+    /* Light mode */
+    .copy-button {
+        color: #24292f;
+    }
+    
+    /* Dark mode */
+    [data-theme="dark"] .copy-button {
+        color: #c9d1d9;
+    }
+    
+    .highlight pre {
+        padding-right: 40px;
+    }
+    
+    .copy-button svg {
+        fill: currentColor;
+    }
+    </style>
+    
+    <script>
+    function addCopyButtons() {
+        const codeBlocks = document.querySelectorAll('pre[class*="language-"], .highlight');
         
-        // Create button
-        const button = document.createElement('button');
-        button.className = 'copy-button';
-        button.textContent = 'Copy';
-        
-        // Add click handler
-        button.addEventListener('click', async () => {
-            // Get code content
-            const code = block.querySelector('code') || block;
-            const text = code.innerText || code.textContent;
-            
-            try {
-                await navigator.clipboard.writeText(text.trim());
-                button.textContent = 'Copied!';
-                setTimeout(() => button.textContent = 'Copy', 2000);
-            } catch (err) {
-                console.error('Copy failed:', err);
-                button.textContent = 'Error!';
-                setTimeout(() => button.textContent = 'Copy', 2000);
+        const copyIcon = `<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16">
+            <path fill-rule="evenodd" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 010 1.5h-1.5a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 019.25 16h-7.5A1.75 1.75 0 010 14.25v-7.5z"></path><path fill-rule="evenodd" d="M5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0114.25 11h-7.5A1.75 1.75 0 015 9.25v-7.5zm1.75-.25a.25.25 0 00-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 00.25-.25v-7.5a.25.25 0 00-.25-.25h-7.5z"></path>
+        </svg>`;
+    
+        const checkIcon = `<svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16">
+            <path fill-rule="evenodd" d="M13.78 4.22a.75.75 0 010 1.06l-7.25 7.25a.75.75 0 01-1.06 0L2.22 9.28a.75.75 0 011.06-1.06L6 10.94l6.72-6.72a.75.75 0 011.06 0z"></path>
+        </svg>`;
+    
+        codeBlocks.forEach((block) => {
+            // Create wrapper if it doesn't exist
+            let wrapper = block.parentElement;
+            if (!wrapper.classList.contains('highlight-wrapper')) {
+                wrapper = document.createElement('div');
+                wrapper.className = 'highlight-wrapper';
+                block.parentNode.insertBefore(wrapper, block);
+                wrapper.appendChild(block);
+            }
+    
+            // Add copy button if it doesn't exist
+            if (!wrapper.querySelector('.copy-button')) {
+                const button = document.createElement('button');
+                button.className = 'copy-button';
+                button.innerHTML = copyIcon;
+                
+                button.addEventListener('click', async () => {
+                    const code = block.querySelector('code') || block;
+                    const text = code.innerText || code.textContent;
+                    
+                    try {
+                        await navigator.clipboard.writeText(text.trim());
+                        button.innerHTML = checkIcon;
+                        setTimeout(() => button.innerHTML = copyIcon, 2000);
+                    } catch (err) {
+                        console.error('Copy failed:', err);
+                        button.textContent = 'Error!';
+                        setTimeout(() => button.innerHTML = copyIcon, 2000);
+                    }
+                });
+                
+                if (window.getComputedStyle(block).position === 'static') {
+                    block.style.position = 'relative';
+                }
+                
+                block.appendChild(button);
             }
         });
-        
-        // Make block relative if it's not already
-        if (window.getComputedStyle(block).position === 'static') {
-            block.style.position = 'relative';
-        }
-        
-        // Add button to block
-        block.appendChild(button);
+    }
+    
+    // Initialize on page load
+    if (window.Prism) {
+        Prism.hooks.add('complete', addCopyButtons);
+    } else {
+        document.addEventListener('DOMContentLoaded', addCopyButtons);
+    }
+    
+    // Handle Hugo live reload
+    document.addEventListener('LiveReloadDisconnect', () => {
+        setTimeout(addCopyButtons, 100);
     });
-}
-
-// Run when Prism is ready
-if (window.Prism) {
-    Prism.hooks.add('complete', addCopyButtons);
-} else {
-    document.addEventListener('DOMContentLoaded', addCopyButtons);
-}
-
-// Re-run after Hugo live reload
-document.addEventListener('LiveReloadDisconnect', () => {
-    setTimeout(addCopyButtons, 100);
-});
-</script>
+    </script>
+    
