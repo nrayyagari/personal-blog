@@ -1,4 +1,5 @@
-<style>
+<!-- START: Code Copy Button Styles -->
+<style id="copy-button-styles">
 .highlight {
     position: relative;
 }
@@ -47,30 +48,38 @@
     opacity: 0.9;
 }
 </style>
+<!-- END: Code Copy Button Styles -->
 
-<script>
+<!-- START: Code Copy Button Script -->
+<script id="copy-button-script">
 document.addEventListener('DOMContentLoaded', function() {
+    // Add a flag to track initialization
+    if (window.copyButtonsInitialized) return;
+    window.copyButtonsInitialized = true;
+
     document.querySelectorAll('pre').forEach(function(pre) {
         if (pre.querySelector('.copy-button')) return;
-        
+
         var button = document.createElement('button');
         button.className = 'copy-button';
         button.setAttribute('aria-label', 'Copy code');
-        
+
         button.addEventListener('click', function() {
             var code = pre.querySelector('code') || pre;
             var text = code.innerText;
-            
+
             navigator.clipboard.writeText(text).then(function() {
                 button.classList.add('success');
-                
+
                 setTimeout(function() {
                     button.classList.remove('success');
                 }, 2000);
             });
         });
-        
+
         pre.appendChild(button);
     });
 });
 </script>
+<!-- END: Code Copy Button Script -->
+
