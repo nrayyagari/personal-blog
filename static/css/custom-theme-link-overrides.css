@@ -1,0 +1,45 @@
+/**
+ * Custom Theme Link Overrides
+ * ==========================
+ *
+ * This file contains custom styles to override the default link hover behavior
+ * in the theme. It replaces the default red highlight with a more soothing blue
+ * color for better readability and visual appeal.
+ *
+ * Styles Applied:
+ * - Changes the hover and focus color of links to a blueish shade (#007bff).
+ * - Removes any background color on hover/focus.
+ * - Adds a smooth transition effect for hover/focus states.
+ * - Specifically targets TOC (Table of Contents) links for consistent styling.
+ *
+ * Usage:
+ * - Include this file in your Hugo site via `customHeadHTML` in `config.toml`.
+ * - Ensure this file is loaded after the theme's default CSS to override it.
+ *
+ * Example `config.toml` entry:
+ * [params]
+ *   customHeadHTML = '''
+ *     <link rel="stylesheet" href="/css/custom-theme-link-overrides.css">
+ *   '''
+ *
+ * Reverting:
+ * - To revert to the default theme styles, simply remove the reference to this
+ *   file from `config.toml` and delete the file.
+ */
+
+/* Base link hover/focus styles */
+a:hover,
+a:focus {
+  color: #007bff !important; /* Lighter blue */
+  background-color: transparent !important;
+  text-decoration: underline;
+  transition: color 0.2s ease; /* Smooth transition */
+}
+
+/* TOC link hover/focus styles */
+.toc a:hover,
+.toc a:focus {
+  color: #007bff !important;
+  background-color: transparent !important;
+  transition: color 0.2s ease; /* Smooth transition */
+}

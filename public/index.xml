@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nitin Ayyagari</title>
-    <link>http://localhost:52029/</link>
+    <link>http://localhost:58589/</link>
     <description>Recent content on Nitin Ayyagari</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 05 Jun 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:52029/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:58589/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Problem - Bad or Good One?</title>
-      <link>http://localhost:52029/general/problem-bad-or-good-one/</link>
+      <link>http://localhost:58589/general/problem-bad-or-good-one/</link>
       <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52029/general/problem-bad-or-good-one/</guid>
+      <guid>http://localhost:58589/general/problem-bad-or-good-one/</guid>
       <description>Last year, I was talking to a Co-founder of a company I was interviewing for.&#xA;We were talking about their presence in Hyderabad, how they grew into a niche service startup that was solving problems for their customers. He was giving me a peek into their future plans, how the Hyderabad office real estate market has shot up exponentially in the last 5 years and so forth.&#xA;What caught my attention was, when he said: &amp;ldquo;Yes, we are planning to expand, it&amp;rsquo;s difficult to find a good office space but It&amp;rsquo;s a good problem to have!</description>
     </item>
     <item>
       <title>Understanding Vectors and RAG: A Beginner&#39;s Guide</title>
-      <link>http://localhost:52029/posts/understanding-vectors-and-rag/</link>
+      <link>http://localhost:58589/posts/understanding-vectors-and-rag/</link>
       <pubDate>Tue, 26 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52029/posts/understanding-vectors-and-rag/</guid>
+      <guid>http://localhost:58589/posts/understanding-vectors-and-rag/</guid>
       <description>Introduction As someone new to AI and Machine Learning, understanding concepts like vectors and RAG (Retrieval-Augmented Generation) can seem daunting. In this post, I&amp;rsquo;ll break down these concepts in simple terms that anyone can understand.&#xA;What is a Vector? Think of a vector as a list of numbers that represents something in a way that computers can understand. Just like we might describe a person using characteristics like height, weight, and age, vectors describe things using numbers.</description>
     </item>
     <item>
       <title>Building Docker Images for Multiple Architectures</title>
-      <link>http://localhost:52029/posts/docker-build-for-multiarch/</link>
+      <link>http://localhost:58589/posts/docker-build-for-multiarch/</link>
       <pubDate>Sun, 24 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52029/posts/docker-build-for-multiarch/</guid>
+      <guid>http://localhost:58589/posts/docker-build-for-multiarch/</guid>
       <description>Introduction Docker has revolutionized the way we package and deploy applications, making it easier to ensure consistency across different environments. However, when it comes to building Docker images for multiple architectures, such as linux/amd64 and linux/arm64, there are some challenges to overcome. In this blog post, we&amp;rsquo;ll explore how to build Docker images that work seamlessly on both x86-64 and ARM64 architectures.&#xA;The Rise of ARM-based Chips In recent years, ARM-based chips have gained significant popularity in the computing industry.</description>
     </item>
     <item>
       <title>Fetching Metadata of Helm Chart Repository - A case with Nexus</title>
-      <link>http://localhost:52029/posts/fetching-metadata-of-helm-chart-repository---a-case-with-nexus/</link>
+      <link>http://localhost:58589/posts/fetching-metadata-of-helm-chart-repository---a-case-with-nexus/</link>
       <pubDate>Tue, 20 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52029/posts/fetching-metadata-of-helm-chart-repository---a-case-with-nexus/</guid>
+      <guid>http://localhost:58589/posts/fetching-metadata-of-helm-chart-repository---a-case-with-nexus/</guid>
       <description>Sample Blog Post 2</description>
     </item>
     <item>
       <title>Mastering cURL for API Development and Testing</title>
-      <link>http://localhost:52029/posts/mastering-curl-for-api-development-and-testing/</link>
+      <link>http://localhost:58589/posts/mastering-curl-for-api-development-and-testing/</link>
       <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52029/posts/mastering-curl-for-api-development-and-testing/</guid>
+      <guid>http://localhost:58589/posts/mastering-curl-for-api-development-and-testing/</guid>
       <description>As a developer working with APIs, having a reliable and versatile tool for making HTTP requests is very essential. cURL, a powerful command-line utility, is the perfect companion for API development and testing. In this blog post, we&amp;rsquo;ll explore how to leverage cURL to streamline your API workflow.&#xA;cool-beans 1. Understanding cURL Basics cURL is designed with minimal behavior by default, only performing the necessary actions unless instructed otherwise . To extend its functionality, you must explicitly add options .</description>
     </item>
     <item>
       <title>Sample</title>
-      <link>http://localhost:52029/general/sample/</link>
+      <link>http://localhost:58589/general/sample/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:52029/general/sample/</guid>
+      <guid>http://localhost:58589/general/sample/</guid>
       <description>History Sample Blüdhaven was a former whaling town, which was officially incorporated as a &amp;ldquo;Commonwealth&amp;rdquo; in 1912. The town had a generally poor socio-economic populace, owing in part to failed efforts to transform itself into a manufacturing and shipping center.</description>
     </item>
   </channel>
