@@ -52,6 +52,7 @@ pygmentsStyle = "monokai"
     <link rel="stylesheet" href="/css/copy-button.css">
     <script src="/js/copy-button.js"></script>
     <link rel="stylesheet" href="/css/custom-code-block.css">
+    <link rel="stylesheet" href="/css/custom-theme-link-overrides.css">
     '''
 
 [markup]
