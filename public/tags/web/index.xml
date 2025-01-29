@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Web on Nitin Ayyagari</title>
-    <link>http://localhost:1313/tags/web/</link>
+    <link>http://localhost:58772/tags/web/</link>
     <description>Recent content in Web on Nitin Ayyagari</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 11 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:58772/tags/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mastering cURL for API Development and Testing</title>
-      <link>http://localhost:1313/posts/mastering-curl-for-api-development-and-testing/</link>
+      <link>http://localhost:58772/posts/mastering-curl-for-api-development-and-testing/</link>
       <pubDate>Wed, 11 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/mastering-curl-for-api-development-and-testing/</guid>
+      <guid>http://localhost:58772/posts/mastering-curl-for-api-development-and-testing/</guid>
       <description>As a developer working with APIs, having a reliable and versatile tool for making HTTP requests is very essential. cURL, a powerful command-line utility, is the perfect companion for API development and testing. In this blog post, we&amp;rsquo;ll explore how to leverage cURL to streamline your API workflow.&#xA;cool-beans 1. Understanding cURL Basics cURL is designed with minimal behavior by default, only performing the necessary actions unless instructed otherwise . To extend its functionality, you must explicitly add options .</description>
     </item>
   </channel>

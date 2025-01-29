@@ -21,20 +21,13 @@ pygmentsStyle = "monokai"
     avatarSize = "size-m"
     AvatarAltText = "Nitin Ayyagari"
     prism_syntax_highlighting = true
-
-    #favicon_32 = "/img/favicon-32x32.png"
-    #favicon_16 = "/img/favicon-16x16.png"
     colorscheme = "light"
     dateFormat = "2 January, 2006"
     togglePreviousAndNextButtons = "true"
-
     hidecredits = true
     hidecopyright = true
-
     rtl = true
-
     math = true
-
     ShowBackToTopButton = true
     showPostsOnHomePage = "recent"
     footer = "Nitin Ayyagari"
@@ -56,9 +49,9 @@ pygmentsStyle = "monokai"
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-okaidia.min.css" media="(prefers-color-scheme: dark)">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+    <link rel="stylesheet" href="/css/copy-button.css">
+    <script src="/js/copy-button.js"></script>
     '''
-
-
 
 [markup]
   [markup.highlight]
@@ -71,11 +64,6 @@ pygmentsStyle = "monokai"
     noClasses = false
     style = "monokai"
     tabWidth = 1
-
-#[[menu.main]]
-#    url = "/"
-#    name = "Home"
-#    weight = 1
 
 [[menu.main]]
     url = "/about/"
@@ -108,9 +96,3 @@ pygmentsStyle = "monokai"
     pre = "<span data-feather='rss'></span>"
     url = "/index.xml"
     weight = 6
-
-#[[menu.main]]
-#    identifier = "buymeacoffee"
-#    pre = "<span data-feather='coffee'></span>"
-#    url = "https://www.buymeacoffee.com/nitinayyagari"
-#    weight = 6

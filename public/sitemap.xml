@@ -2,66 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/general/</loc>
+    <loc>http://localhost:58772/general/</loc>
     <lastmod>2024-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:58772/</loc>
     <lastmod>2024-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/general/problem-bad-or-good-one/</loc>
+    <loc>http://localhost:58772/general/problem-bad-or-good-one/</loc>
     <lastmod>2024-06-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/ai/</loc>
+    <loc>http://localhost:58772/tags/ai/</loc>
     <lastmod>2024-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/machine-learning/</loc>
+    <loc>http://localhost:58772/tags/machine-learning/</loc>
     <lastmod>2024-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:58772/posts/</loc>
     <lastmod>2024-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/rag/</loc>
+    <loc>http://localhost:58772/tags/rag/</loc>
     <lastmod>2024-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:58772/tags/</loc>
     <lastmod>2024-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/understanding-vectors-and-rag/</loc>
+    <loc>http://localhost:58772/posts/understanding-vectors-and-rag/</loc>
     <lastmod>2024-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/vectors/</loc>
+    <loc>http://localhost:58772/tags/vectors/</loc>
     <lastmod>2024-03-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/docker-build-for-multiarch/</loc>
+    <loc>http://localhost:58772/posts/docker-build-for-multiarch/</loc>
     <lastmod>2024-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/docker/</loc>
+    <loc>http://localhost:58772/tags/docker/</loc>
     <lastmod>2024-03-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/fetching-metadata-of-helm-chart-repository---a-case-with-nexus/</loc>
+    <loc>http://localhost:58772/posts/fetching-metadata-of-helm-chart-repository---a-case-with-nexus/</loc>
     <lastmod>2024-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/helm/</loc>
+    <loc>http://localhost:58772/tags/helm/</loc>
     <lastmod>2024-02-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/mastering-curl-for-api-development-and-testing/</loc>
+    <loc>http://localhost:58772/posts/mastering-curl-for-api-development-and-testing/</loc>
     <lastmod>2023-10-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/networking/</loc>
+    <loc>http://localhost:58772/tags/networking/</loc>
     <lastmod>2023-10-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/web/</loc>
+    <loc>http://localhost:58772/tags/web/</loc>
     <lastmod>2023-10-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:58772/about/</loc>
     <lastmod>2023-01-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:58772/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/kubernetes/</loc>
+    <loc>http://localhost:58772/tags/kubernetes/</loc>
   </url><url>
-    <loc>http://localhost:1313/general/sample/</loc>
+    <loc>http://localhost:58772/general/sample/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/wealth/</loc>
+    <loc>http://localhost:58772/tags/wealth/</loc>
   </url>
 </urlset>
