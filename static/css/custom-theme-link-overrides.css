@@ -43,3 +43,10 @@ a:focus {
   background-color: transparent !important;
   transition: color 0.2s ease; /* Smooth transition */
 }
+
+/* Target the active TOC link when scrolling */
+.toc a[data-level].active,
+.toc a[data-level]:target {
+  color: #007bff !important;
+  background-color: transparent !important;
+}}
