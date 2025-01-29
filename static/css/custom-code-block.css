@@ -1,0 +1,31 @@
+/* Ensure code doesn't get cut off horizontally */
+pre[class*="language-"] {
+  overflow-x: auto;          /* Allows sideways scrolling if content is too wide */
+  white-space: pre;          /* Preserves whitespace and line breaks */
+  word-wrap: normal;         /* Prevents wrapping that could cause strange cuts */
+  padding: 1rem;             /* Add some padding */
+  border-radius: 6px;        /* Rounded corners */
+}
+
+code[class*="language-"] {
+  display: block;            /* Ensures the code block behaves as a block element */
+  overflow-x: auto;          /* Allows sideways scrolling if content is too wide */
+  white-space: pre;          /* Preserves whitespace and line breaks */
+  word-wrap: normal;         /* Prevents wrapping that could cause strange cuts */
+}
+
+/* Light mode styles */
+pre[class*="language-"],
+code[class*="language-"] {
+  background-color: #f8f9fa !important; /* Soft off-white */
+  color: #2d333b !important;            /* Dark gray for readability */
+}
+
+/* Dark mode override */
+@media (prefers-color-scheme: dark) {
+  pre[class*="language-"],
+  code[class*="language-"] {
+    background-color: #2d333b !important; /* Dark gray */
+    color: #adbac7 !important;           /* Light gray for readability */
+  }
+}
