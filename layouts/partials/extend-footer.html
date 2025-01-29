@@ -1,73 +1,89 @@
 <style>
-/* Copy button styles */
-.post-content pre {
-    position: relative;
-}
-
-.copy-button {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    padding: 5px 10px;
-    font-size: 12px;
-    color: #ffffff;
-    background-color: #444;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    opacity: 0.9;
-    transition: opacity 0.3s, background-color 0.3s;
-    z-index: 10;
-}
-
-.copy-button:hover {
-    opacity: 1;
-    background-color: #666;
-}
-
-.copy-button.copied {
-    background-color: #28a745;
-}
-</style>
-
-<script>
-function createCopyButton(codeBlock) {
-    // Create the copy button
-    const button = document.createElement("button");
-    button.className = "copy-button";
-    button.textContent = "Copy";
+    .highlight {
+        position: relative;
+    }
     
-    // Add click handler
-    button.addEventListener("click", async () => {
-        try {
-            const code = codeBlock.querySelector("code").innerText;
-            await navigator.clipboard.writeText(code);
-            
-            // Visual feedback
-            button.textContent = "Copied!";
-            button.classList.add("copied");
-            
-            // Reset after 2 seconds
-            setTimeout(() => {
-                button.textContent = "Copy";
-                button.classList.remove("copied");
-            }, 2000);
-        } catch (err) {
-            button.textContent = "Failed";
-            console.error("Failed to copy:", err);
-        }
-    });
+    .copy-button {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        padding: 8px 12px;
+        font-size: 13px;
+        color: #666;
+        background: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 6px;
+        cursor: pointer;
+        opacity: 0;
+        transition: 0.2s;
+        z-index: 2;
+    }
     
-    return button;
-}
-
-// Add copy buttons to all code blocks
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll("pre").forEach(pre => {
-        if (pre.querySelector("code")) {
-            const copyButton = createCopyButton(pre);
-            pre.appendChild(copyButton);
-        }
+    .highlight:hover .copy-button {
+        opacity: 1;
+    }
+    
+    [data-theme="dark"] .copy-button {
+        background: #2d333b;
+        border-color: #444c56;
+        color: #adbac7;
+    }
+    
+    .highlight pre {
+        padding-right: 40px;
+    }
+    </style>
+    
+    <script>
+    function addCopyButtons() {
+        // Target both Hugo's default and Prism.js code blocks
+        const codeBlocks = document.querySelectorAll('pre[class*="language-"], .highlight');
+        
+        codeBlocks.forEach((block) => {
+            // Skip if already has a button
+            if (block.querySelector('.copy-button')) return;
+            
+            // Create button
+            const button = document.createElement('button');
+            button.className = 'copy-button';
+            button.textContent = 'Copy';
+            
+            // Add click handler
+            button.addEventListener('click', async () => {
+                // Get code content
+                const code = block.querySelector('code') || block;
+                const text = code.innerText || code.textContent;
+                
+                try {
+                    await navigator.clipboard.writeText(text.trim());
+                    button.textContent = 'Copied!';
+                    setTimeout(() => button.textContent = 'Copy', 2000);
+                } catch (err) {
+                    console.error('Copy failed:', err);
+                    button.textContent = 'Error!';
+                    setTimeout(() => button.textContent = 'Copy', 2000);
+                }
+            });
+            
+            // Make block relative if it's not already
+            if (window.getComputedStyle(block).position === 'static') {
+                block.style.position = 'relative';
+            }
+            
+            // Add button to block
+            block.appendChild(button);
+        });
+    }
+    
+    // Run when Prism is ready
+    if (window.Prism) {
+        Prism.hooks.add('complete', addCopyButtons);
+    } else {
+        document.addEventListener('DOMContentLoaded', addCopyButtons);
+    }
+    
+    // Re-run after Hugo live reload
+    document.addEventListener('LiveReloadDisconnect', () => {
+        setTimeout(addCopyButtons, 100);
     });
-});
-</script>
+    </script>
